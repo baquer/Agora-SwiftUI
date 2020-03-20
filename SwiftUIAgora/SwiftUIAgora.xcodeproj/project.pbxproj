@@ -11,6 +11,7 @@
 		801EE0852423576A0039E1EF /* ElectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801EE0842423576A0039E1EF /* ElectionView.swift */; };
 		802AFFEE2423DE0000A46124 /* CreateElectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802AFFED2423DE0000A46124 /* CreateElectionView.swift */; };
 		803EFE95241EB86B00EA8E8C /* ForgotPassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803EFE94241EB86B00EA8E8C /* ForgotPassword.swift */; };
+		805A9C4F24256A77005E27EE /* SwiftUIAgora.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 805A9C4D24256A77005E27EE /* SwiftUIAgora.xcdatamodeld */; };
 		805C1491242288CE005888D9 /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = 805C1490242288CE005888D9 /* Client.swift */; };
 		805C1493242288E1005888D9 /* Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 805C1492242288E1005888D9 /* Convenience.swift */; };
 		805C149824229E52005888D9 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 805C149724229E52005888D9 /* SignUpView.swift */; };
@@ -39,6 +40,7 @@
 		801EE0842423576A0039E1EF /* ElectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElectionView.swift; sourceTree = "<group>"; };
 		802AFFED2423DE0000A46124 /* CreateElectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateElectionView.swift; sourceTree = "<group>"; };
 		803EFE94241EB86B00EA8E8C /* ForgotPassword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPassword.swift; sourceTree = "<group>"; };
+		805A9C4E24256A77005E27EE /* SwiftUIAgora.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SwiftUIAgora.xcdatamodel; sourceTree = "<group>"; };
 		805C1490242288CE005888D9 /* Client.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
 		805C1492242288E1005888D9 /* Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Convenience.swift; sourceTree = "<group>"; };
 		805C149724229E52005888D9 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
@@ -189,6 +191,7 @@
 				8088E5D724143ED600CE92F1 /* Assets.xcassets */,
 				8088E5DC24143ED600CE92F1 /* LaunchScreen.storyboard */,
 				8088E5DF24143ED600CE92F1 /* Info.plist */,
+				805A9C4D24256A77005E27EE /* SwiftUIAgora.xcdatamodeld */,
 				8088E5D924143ED600CE92F1 /* Preview Content */,
 			);
 			path = SwiftUIAgora;
@@ -318,6 +321,7 @@
 				805C1491242288CE005888D9 /* Client.swift in Sources */,
 				805C1493242288E1005888D9 /* Convenience.swift in Sources */,
 				805C149824229E52005888D9 /* SignUpView.swift in Sources */,
+				805A9C4F24256A77005E27EE /* SwiftUIAgora.xcdatamodeld in Sources */,
 				8088E5D424143ED500CE92F1 /* SceneDelegate.swift in Sources */,
 				802AFFEE2423DE0000A46124 /* CreateElectionView.swift in Sources */,
 				8088E5D624143ED500CE92F1 /* ContentView.swift in Sources */,
@@ -577,6 +581,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		805A9C4D24256A77005E27EE /* SwiftUIAgora.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				805A9C4E24256A77005E27EE /* SwiftUIAgora.xcdatamodel */,
+			);
+			currentVersion = 805A9C4E24256A77005E27EE /* SwiftUIAgora.xcdatamodel */;
+			path = SwiftUIAgora.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 8088E5C624143ED500CE92F1 /* Project object */;
 }
