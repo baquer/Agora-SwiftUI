@@ -11,12 +11,10 @@ import SwiftUI
 let lightGreyColor = Color(red: 239.0/255.0, green: 243.0/255.0, blue: 244.0/255.0, opacity: 1.0)
 
 struct LoginView: View {
-    
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     @State var selection: Int? = nil
     @State var username: String = ""
     @State var password: String = ""
-    
     var body: some View {
         ZStack {
         Color.black
@@ -45,12 +43,17 @@ struct LoginView: View {
                 .frame(width: 380)
                 .foregroundColor(Color.white)
                 .padding(30)
-            Button(action: {print("Button tapped")}) {
-               LoginButtonContent()
-            }
-            NavigationLink(destination: ForgotPassword(), tag: 1, selection: $selection) {
+            NavigationLink(destination: TabBarSwiftUIView(), tag: 1, selection: $selection) {
             Button(action: {
                 self.selection = 1
+
+            }) {
+               LoginButtonContent()
+            }
+            }
+            NavigationLink(destination: ForgotPassword(), tag: 2, selection: $selection) {
+            Button(action: {
+                self.selection = 2
             }) {
                 ForgotButtonContent()
             }

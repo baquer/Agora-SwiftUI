@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		801EE08124234BD30039E1EF /* TabBarSwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801EE08024234BD30039E1EF /* TabBarSwiftUIView.swift */; };
+		801EE0852423576A0039E1EF /* ElectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801EE0842423576A0039E1EF /* ElectionView.swift */; };
+		802AFFEE2423DE0000A46124 /* CreateElectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802AFFED2423DE0000A46124 /* CreateElectionView.swift */; };
 		803EFE95241EB86B00EA8E8C /* ForgotPassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803EFE94241EB86B00EA8E8C /* ForgotPassword.swift */; };
 		805C1491242288CE005888D9 /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = 805C1490242288CE005888D9 /* Client.swift */; };
 		805C1493242288E1005888D9 /* Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 805C1492242288E1005888D9 /* Convenience.swift */; };
@@ -32,6 +35,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		801EE08024234BD30039E1EF /* TabBarSwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarSwiftUIView.swift; sourceTree = "<group>"; };
+		801EE0842423576A0039E1EF /* ElectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElectionView.swift; sourceTree = "<group>"; };
+		802AFFED2423DE0000A46124 /* CreateElectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateElectionView.swift; sourceTree = "<group>"; };
 		803EFE94241EB86B00EA8E8C /* ForgotPassword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPassword.swift; sourceTree = "<group>"; };
 		805C1490242288CE005888D9 /* Client.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
 		805C1492242288E1005888D9 /* Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Convenience.swift; sourceTree = "<group>"; };
@@ -68,9 +74,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		801EE0822423570B0039E1EF /* TabBarView */ = {
+			isa = PBXGroup;
+			children = (
+				801EE08024234BD30039E1EF /* TabBarSwiftUIView.swift */,
+			);
+			path = TabBarView;
+			sourceTree = "<group>";
+		};
+		801EE083242357460039E1EF /* ElectionView */ = {
+			isa = PBXGroup;
+			children = (
+				801EE0842423576A0039E1EF /* ElectionView.swift */,
+			);
+			path = ElectionView;
+			sourceTree = "<group>";
+		};
+		802AFFEF2423DE7300A46124 /* Create Elections */ = {
+			isa = PBXGroup;
+			children = (
+				802AFFED2423DE0000A46124 /* CreateElectionView.swift */,
+			);
+			path = "Create Elections";
+			sourceTree = "<group>";
+		};
 		805C148A24228804005888D9 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				802AFFEF2423DE7300A46124 /* Create Elections */,
+				801EE083242357460039E1EF /* ElectionView */,
+				801EE0822423570B0039E1EF /* TabBarView */,
 				805C149424228977005888D9 /* Sign UP */,
 				805C148F24228897005888D9 /* Forgot Password */,
 				805C148E2422888F005888D9 /* Login */,
@@ -280,13 +313,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				8088E5D224143ED500CE92F1 /* AppDelegate.swift in Sources */,
+				801EE0852423576A0039E1EF /* ElectionView.swift in Sources */,
 				8088E5F424143F4E00CE92F1 /* LoginView.swift in Sources */,
 				805C1491242288CE005888D9 /* Client.swift in Sources */,
 				805C1493242288E1005888D9 /* Convenience.swift in Sources */,
 				805C149824229E52005888D9 /* SignUpView.swift in Sources */,
 				8088E5D424143ED500CE92F1 /* SceneDelegate.swift in Sources */,
+				802AFFEE2423DE0000A46124 /* CreateElectionView.swift in Sources */,
 				8088E5D624143ED500CE92F1 /* ContentView.swift in Sources */,
 				803EFE95241EB86B00EA8E8C /* ForgotPassword.swift in Sources */,
+				801EE08124234BD30039E1EF /* TabBarSwiftUIView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
