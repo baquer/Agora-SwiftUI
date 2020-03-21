@@ -29,8 +29,8 @@ struct ForgotPassword: View {
 //                    .cornerRadius(5.0)
 //                    .padding(.bottom, 30)
 //                    .frame(width: 380, height: 0)
-                    CustomTextField(placeHolder: "User Name", value: $username, lineColor: .white, width: 1)
-                        .foregroundColor(Color.white)
+                    CustomTextField(placeHolder: "User Name", value: $username, lineColor: .black, width: 1)
+                        .colorInvert()
                         .frame(width: 380)
                     Button(action: {
                         print("Button tapped")

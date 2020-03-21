@@ -14,7 +14,7 @@ struct CreateElectionView: View {
         @FetchRequest(entity: CreateElection.entity(), sortDescriptors: [] )var createElect: FetchedResults<CreateElection>
     @Environment(\.managedObjectContext) var moc
 
-    
+    @State var selection: Int? = nil
     @State var name = ""
     @State var description = ""
     @State var startDate = Date()
@@ -38,13 +38,15 @@ struct CreateElectionView: View {
                         Text("End Date")
                     }
                     // Checking that if data is stored or not
+                    
 //                    List {
-//                        ForEach(createElect, id: \.self) { election in
-//                            Text("\(election.elecDes ?? "Unknown")")
+//                        ForEach(createElect, id: \.self) { elections in
+//                            Text("\(elections.name ??  "Unknown")")
 //                        }
 //                    }
                 }.colorInvert()
                  .padding(2)
+                NavigationLink(destination: AddCandidatesNames(), tag: 1, selection: $selection) {
                 Button(action: {
                    // Storing user data in User Default
 //                    UserDefaults.standard.set(self.name, forKey: "electionName")
@@ -65,9 +67,11 @@ struct CreateElectionView: View {
                     } catch {
                         print(error)
                     }
+                    self.selection = 1
                 }) {
                    createNextButtonContent()
                 }
+                } .navigationBarTitle("Create Elections")
                 Spacer()
                 Spacer()
                 Spacer()
@@ -94,4 +98,44 @@ struct createNextButtonContent: View {
             .cornerRadius(15.0)
     }
 }
+
+struct multiline : UIViewRepresentable {
+    
+    
+    @Binding var txt : String
+    
+    func makeCoordinator() -> multiline.Coordinator {
+        
+        return multiline.Coordinator(parent1: self)
+        
+    }
+    func makeUIView(context: UIViewRepresentableContext<multiline>) -> UITextView{
+        
+        let textview = UITextView()
+        textview.font = .systemFont(ofSize: 18)
+        textview.delegate = context.coordinator
+        return textview
+    }
+    
+    func updateUIView(_ uiView: UITextView, context: UIViewRepresentableContext<multiline>) {
+        
+        uiView.text = txt
+    }
+    
+    class Coordinator : NSObject,UITextViewDelegate{
+        
+        var parent : multiline
+        
+        init(parent1 : multiline) {
+            
+            parent = parent1
+        }
+        
+        func textViewDidChange(_ textView: UITextView) {
+            
+            self.parent.txt = textView.text
+        }
+    }
+}
+
 

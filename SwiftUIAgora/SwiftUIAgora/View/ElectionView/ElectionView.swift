@@ -117,7 +117,7 @@ struct ElectionView: View {
                         Text("0").fontWeight(.heavy).font(.subheadline).foregroundColor(.white)
                         Spacer()
                     }.frame(width: 350, height: 250)
-                        .background(Color(hex:0x005229))
+                    .background(Color(hex:0x005229))
                     .cornerRadius(30)
                     .shadow(color: .gray, radius: 5)
                 }
@@ -133,7 +133,7 @@ struct ElectionView: View {
                        createElectionButtonContent()
                     }
                     }
-                }.navigationBarTitle("Dashboard", displayMode: .large)
+                }.navigationBarTitle("Dashboard")
             }
         }
     }
