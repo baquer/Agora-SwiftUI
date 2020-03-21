@@ -55,6 +55,25 @@ Run the app (⌘+R).and test it.
     <td><img src="/screenshots/Screenshot 2020-03-19 at 1.28.41 AM.png" height = "500" width="250"></td>
   </tr>
   </tr>
+  <tr>
+    <td><img src="/screenshots/Dashboard.png" height = "500" width="250"></td>
+    <td><img src="/screenshots/Dashboard1.png" height = "500" width="250"></td>
+  </tr>
+  </tr>
+  <tr>
+    <td><img src="/screenshots/CreateElection1.png" height = "500" width="250"></td>
+    <td><img src="/screenshots/CreateElection.png" height = "500" width="250"></td>
+  </tr>
+  </tr>
+  <tr>
+    <td><img src="/screenshots/AddCandidates.png" height = "500" width="250"></td>
+    <td><img src="/screenshots/AddCandidates1.png" height = "500" width="250"></td>
+  </tr>
+  </tr>
+  <tr>
+    <td><img src="/screenshots/AddCandidates2.png" height = "500" width="250"></td>
+  </tr>
+  </tr>
   </tr>
   </tr>
 </table>
