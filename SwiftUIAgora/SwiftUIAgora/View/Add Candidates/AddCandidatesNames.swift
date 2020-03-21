@@ -48,7 +48,7 @@ struct AddCandidatesNames: View {
                 }) {
                    createNextButtonContent()
                 }
-                }.navigationBarTitle("Enter Candidates")
+                    }.navigationBarTitle("Enter Candidates")
                 Spacer()
                 Spacer()
             }.padding(20)
