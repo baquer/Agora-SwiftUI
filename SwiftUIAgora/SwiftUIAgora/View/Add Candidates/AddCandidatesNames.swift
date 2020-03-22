@@ -15,6 +15,7 @@ struct AddCandidatesNames: View {
     @FetchRequest(entity: AddCandidates.entity(), sortDescriptors: [] )var addCan: FetchedResults<AddCandidates>
     @Environment(\.managedObjectContext) var moc
     @State var selection: Int? = nil
+    var storeCandidate: [String] = []
     
     var body: some View {
         ZStack {
@@ -40,7 +41,7 @@ struct AddCandidatesNames: View {
                          .background(Color.white)
                          .cornerRadius(30)
                          .shadow(color: .gray, radius: 5)
-                    }
+                    }.onDelete(perform: delete(at:))
                 }.colorInvert()
                 NavigationLink(destination: VotingAlgorithm(), tag: 1, selection: $selection) {
                 Button(action: {
@@ -53,6 +54,9 @@ struct AddCandidatesNames: View {
                 Spacer()
             }.padding(20)
         }
+    }
+    func delete(at offsets: IndexSet) {
+      // Set the list value to be deleted.
     }
 }
 
