@@ -41,7 +41,8 @@ struct AddCandidatesNames: View {
                          .background(Color.white)
                          .cornerRadius(30)
                          .shadow(color: .gray, radius: 5)
-                    }.onDelete(perform: delete(at:))
+                         .colorInvert()
+                        }.onDelete(perform: delete(at:))
                 }.colorInvert()
                 NavigationLink(destination: VotingAlgorithm(), tag: 1, selection: $selection) {
                 Button(action: {

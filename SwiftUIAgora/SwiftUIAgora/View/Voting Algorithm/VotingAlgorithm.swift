@@ -46,6 +46,7 @@ struct VotingAlgorithm: View {
                     .background(Color.white)
                     .cornerRadius(30)
                     .shadow(color: .gray, radius: 5)
+                    .colorInvert()
                 }.colorInvert()
                 HStack{
                     
