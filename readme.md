@@ -67,17 +67,12 @@ Run the app (⌘+R).and test it.
   </tr>
   <tr>
     <td><img src="/screenshots/AddCandidates.png" height = "500" width="250"></td>
-    <td><img src="/screenshots/AddCandidates1.png" height = "500" width="250"></td>
+    <td><img src="/screenshots/AddCan.png" height = "500" width="250"></td>
   </tr>
   </tr>
   <tr>
-    <td><img src="/screenshots/AddCandidates2.png" height = "500" width="250"></td>
-    <td><img src="/screenshots/DeleteFeature.png" height = "500" width="250"></td>
-  </tr>
-  </tr>
-  <tr>
-    <td><img src="/screenshots/VotingAlgorithm2.png" height = "500" width="250"></td>
-    <td><img src="/screenshots/VotingAlgo.png" height = "500" width="250"></td> 
+    <td><img src="/screenshots/VotingAlgoList.png" height = "500" width="250"></td>
+    <td><img src="/screenshots/VotingAlgoList2.png" height = "500" width="250"></td> 
   </tr>
   </tr>
   </tr>
