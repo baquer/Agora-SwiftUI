@@ -83,7 +83,7 @@ struct VotingAlgorithm: View {
                     
                     
                 }.padding(.top)
-            }
+            }.navigationBarTitle("Voting Algorithm")
         }
     }
 }
