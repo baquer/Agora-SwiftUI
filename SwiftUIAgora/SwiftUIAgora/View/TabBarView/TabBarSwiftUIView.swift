@@ -42,7 +42,7 @@ struct TabBarSwiftUIView: View {
                             Text("Contact Us")
                         }
                 }.tag(3)
-                Text("Learn More About Us")
+                AboutUs()
                     .tabItem {
                         VStack {
                             Image("About")

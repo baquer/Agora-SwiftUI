@@ -21,6 +21,7 @@
 		805C149824229E52005888D9 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 805C149724229E52005888D9 /* SignUpView.swift */; };
 		806B8E0724295B1B007CBD9D /* ReportBug.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806B8E0624295B1B007CBD9D /* ReportBug.swift */; };
 		806B8E0A242960E1007CBD9D /* ConatactUs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806B8E09242960E1007CBD9D /* ConatactUs.swift */; };
+		806B8E0D24296677007CBD9D /* AboutUs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806B8E0C24296677007CBD9D /* AboutUs.swift */; };
 		8088E5D224143ED500CE92F1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8088E5D124143ED500CE92F1 /* AppDelegate.swift */; };
 		8088E5D424143ED500CE92F1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8088E5D324143ED500CE92F1 /* SceneDelegate.swift */; };
 		8088E5D624143ED500CE92F1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8088E5D524143ED500CE92F1 /* ContentView.swift */; };
@@ -56,6 +57,7 @@
 		805C149724229E52005888D9 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		806B8E0624295B1B007CBD9D /* ReportBug.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportBug.swift; sourceTree = "<group>"; };
 		806B8E09242960E1007CBD9D /* ConatactUs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConatactUs.swift; sourceTree = "<group>"; };
+		806B8E0C24296677007CBD9D /* AboutUs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUs.swift; sourceTree = "<group>"; };
 		8088E5CE24143ED500CE92F1 /* SwiftUIAgora.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIAgora.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8088E5D124143ED500CE92F1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8088E5D324143ED500CE92F1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -147,6 +149,7 @@
 		805C148A24228804005888D9 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				806B8E0B24296659007CBD9D /* About us */,
 				806B8E08242960AF007CBD9D /* Contact us */,
 				806B8E0524295AEE007CBD9D /* Report Bug */,
 				801E97CD2426B72800699D06 /* Options */,
@@ -225,6 +228,14 @@
 				806B8E09242960E1007CBD9D /* ConatactUs.swift */,
 			);
 			path = "Contact us";
+			sourceTree = "<group>";
+		};
+		806B8E0B24296659007CBD9D /* About us */ = {
+			isa = PBXGroup;
+			children = (
+				806B8E0C24296677007CBD9D /* AboutUs.swift */,
+			);
+			path = "About us";
 			sourceTree = "<group>";
 		};
 		8088E5C524143ED500CE92F1 = {
@@ -385,6 +396,7 @@
 				801EE0852423576A0039E1EF /* ElectionView.swift in Sources */,
 				8088E5F424143F4E00CE92F1 /* LoginView.swift in Sources */,
 				80294EB2242617B800C94FC7 /* AddCandidatesNames.swift in Sources */,
+				806B8E0D24296677007CBD9D /* AboutUs.swift in Sources */,
 				805C1491242288CE005888D9 /* Client.swift in Sources */,
 				805C1493242288E1005888D9 /* Convenience.swift in Sources */,
 				805C149824229E52005888D9 /* SignUpView.swift in Sources */,
