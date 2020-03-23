@@ -98,43 +98,4 @@ struct sendLinkButtonContent: View {
     }
 }
 
-struct CustomTextField: View {
-    var placeHolder: String
-    @Binding var value: String
-    var lineColor: Color
-    var width: CGFloat
-
-    var body: some View {
-        VStack {
-            TextField(self.placeHolder, text: $value)
-            .padding()
-            .font(.title)
-
-            Rectangle().frame(height: self.width)
-                .padding(.horizontal, 20).foregroundColor(self.lineColor)
-        }
-    }
-}
-
-struct CustomPasswordTextField: View {
-    var placeHolder: String
-    @Binding var value: String
-
-    var lineColor: Color
-    var width: CGFloat
-    
-
-    var body: some View {
-        VStack {
-            SecureField(self.placeHolder, text: $value)
-            .padding()
-            .font(.title)
-
-            Rectangle().frame(height: self.width)
-                .padding(.horizontal, 20).foregroundColor(self.lineColor)
-        }
-    }
-}
-
-
 

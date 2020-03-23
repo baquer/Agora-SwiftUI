@@ -51,7 +51,7 @@ struct VotingAlgorithm: View {
                 HStack{
                     
                     Spacer()
-                    NavigationLink(destination: ElectionDetails(), tag: 1, selection: $selection) {
+                    NavigationLink(destination: Options(), tag: 1, selection: $selection) {
                      Button(action: {
                         
                         let storeCreateObject = VotingAlgo(context: self.moc)

@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		801E97CF2426B76600699D06 /* ElectionDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801E97CE2426B76600699D06 /* ElectionDetails.swift */; };
+		801C3609242941F400C5ED12 /* Options.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801C3608242941F400C5ED12 /* Options.swift */; };
+		801C360C2429425900C5ED12 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801C360B2429425900C5ED12 /* Helpers.swift */; };
 		801EE08124234BD30039E1EF /* TabBarSwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801EE08024234BD30039E1EF /* TabBarSwiftUIView.swift */; };
 		801EE0852423576A0039E1EF /* ElectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801EE0842423576A0039E1EF /* ElectionView.swift */; };
 		80294EB2242617B800C94FC7 /* AddCandidatesNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80294EB1242617B800C94FC7 /* AddCandidatesNames.swift */; };
@@ -39,7 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		801E97CE2426B76600699D06 /* ElectionDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElectionDetails.swift; sourceTree = "<group>"; };
+		801C3608242941F400C5ED12 /* Options.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Options.swift; sourceTree = "<group>"; };
+		801C360B2429425900C5ED12 /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
 		801EE08024234BD30039E1EF /* TabBarSwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarSwiftUIView.swift; sourceTree = "<group>"; };
 		801EE0842423576A0039E1EF /* ElectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElectionView.swift; sourceTree = "<group>"; };
 		80294EB1242617B800C94FC7 /* AddCandidatesNames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCandidatesNames.swift; sourceTree = "<group>"; };
@@ -82,12 +84,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		801E97CD2426B72800699D06 /* Eletion Details */ = {
+		801C360A2429423200C5ED12 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				801E97CE2426B76600699D06 /* ElectionDetails.swift */,
+				801C360B2429425900C5ED12 /* Helpers.swift */,
 			);
-			path = "Eletion Details";
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		801E97CD2426B72800699D06 /* Options */ = {
+			isa = PBXGroup;
+			children = (
+				801C3608242941F400C5ED12 /* Options.swift */,
+			);
+			path = Options;
 			sourceTree = "<group>";
 		};
 		801EE0822423570B0039E1EF /* TabBarView */ = {
@@ -133,7 +143,7 @@
 		805C148A24228804005888D9 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				801E97CD2426B72800699D06 /* Eletion Details */,
+				801E97CD2426B72800699D06 /* Options */,
 				80294EB324262FF400C94FC7 /* Voting Algorithm */,
 				80294EB02426167000C94FC7 /* Add Candidates */,
 				802AFFEF2423DE7300A46124 /* Create Elections */,
@@ -216,6 +226,7 @@
 		8088E5D024143ED500CE92F1 /* SwiftUIAgora */ = {
 			isa = PBXGroup;
 			children = (
+				801C360A2429423200C5ED12 /* Helpers */,
 				805C148C2422885F005888D9 /* Presenter */,
 				805C148B24228810005888D9 /* Model */,
 				805C148A24228804005888D9 /* View */,
@@ -356,12 +367,13 @@
 				805C1493242288E1005888D9 /* Convenience.swift in Sources */,
 				805C149824229E52005888D9 /* SignUpView.swift in Sources */,
 				805A9C4F24256A77005E27EE /* SwiftUIAgora.xcdatamodeld in Sources */,
-				801E97CF2426B76600699D06 /* ElectionDetails.swift in Sources */,
 				80294EB52426301700C94FC7 /* VotingAlgorithm.swift in Sources */,
 				8088E5D424143ED500CE92F1 /* SceneDelegate.swift in Sources */,
 				802AFFEE2423DE0000A46124 /* CreateElectionView.swift in Sources */,
+				801C360C2429425900C5ED12 /* Helpers.swift in Sources */,
 				8088E5D624143ED500CE92F1 /* ContentView.swift in Sources */,
 				803EFE95241EB86B00EA8E8C /* ForgotPassword.swift in Sources */,
+				801C3609242941F400C5ED12 /* Options.swift in Sources */,
 				801EE08124234BD30039E1EF /* TabBarSwiftUIView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
