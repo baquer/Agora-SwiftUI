@@ -76,7 +76,7 @@ Run the app (⌘+R).and test it.
   </tr>
   </tr>
   <tr>
-    <td><img src="/screenshots/Options.png" height = "500" width="250"></td>
+    <td><img src="/screenshots/Options1.png" height = "500" width="250"></td>
   </tr>
   </tr>
   </tr>
