@@ -75,6 +75,10 @@ Run the app (⌘+R).and test it.
     <td><img src="/screenshots/VotingAlgoList2.png" height = "500" width="250"></td> 
   </tr>
   </tr>
+  <tr>
+    <td><img src="/screenshots/Options.png" height = "500" width="250"></td>
+  </tr>
+  </tr>
   </tr>
   </tr>
 </table>
