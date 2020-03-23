@@ -35,7 +35,7 @@ struct TabBarSwiftUIView: View {
                             Text("Edit Profile")
                         }
                 }.tag(2)
-                Text("Connect with us")
+                ConatactUs()
                     .tabItem {
                         VStack {
                             Image("ConnectUs")

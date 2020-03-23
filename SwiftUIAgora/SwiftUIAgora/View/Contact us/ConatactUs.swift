@@ -1,5 +1,5 @@
 //
-//  ReportBug.swift
+//  ConatactUs.swift
 //  SwiftUIAgora
 //
 //  Created by Syed on 24/03/20.
@@ -8,27 +8,26 @@
 
 import SwiftUI
 
-struct ReportBug: View {
+struct ConatactUs: View {
     var body: some View {
         ZStack {
             Color.black
                 .edgesIgnoringSafeArea(.all)
             VStack(spacing: 20) {
                 VStack(alignment: .center) {
-                    Text("Report A Bug").font(.title).fontWeight(.bold).padding(30).colorInvert()
-                    bugImageView()
+                    Text("Contact Us").font(.title).fontWeight(.bold).padding(30).colorInvert()
+                    contactUsImageView()
                 }
                 Spacer()
-                VStack(alignment: .center) {
-
-                    Text("Feel free to raise an issue so that our team can improve that as fast as possible").font(.callout).fontWeight(.bold).colorInvert()
+                VStack(alignment: .leading) {
+                    Text("Agora vote is a voting platform where users can create elections and invite friends to cast their votes. It supports a wide range of voting algorithms some of which are Majority, Egalitarian, Australian STV just to name a few").font(.callout).fontWeight(.bold).colorInvert()
                 }
                 Spacer()
                 VStack {
                     Button(action: {
 
                     }) {
-                       reportBugButtonContent()
+                       contactUsButtonContent()
                     }
                 }
                 Spacer()
@@ -37,14 +36,14 @@ struct ReportBug: View {
     }
 }
 
-struct ReportBug_Previews: PreviewProvider {
+struct ConatactUs_Previews: PreviewProvider {
     static var previews: some View {
-        ReportBug()
+        ConatactUs()
     }
 }
-struct bugImageView: View {
+struct contactUsImageView: View {
     var body: some View {
-        return Image("RBug")
+        return Image("CntcUs")
         .resizable()
         .aspectRatio(contentMode: .fill)
         .frame(width: 150, height: 150)
@@ -53,14 +52,15 @@ struct bugImageView: View {
     }
 }
 
-struct reportBugButtonContent: View {
+struct contactUsButtonContent: View {
     var body: some View {
-        return Text("Report Bug")
+        return Text("Learn More")
             .font(.headline)
             .foregroundColor(.white)
             .padding()
             .frame(width: 300, height: 50)
-            .background(Color(hex: 0x005229))
+            .background(Color(hex: 0xFFBE00))
             .cornerRadius(15.0)
     }
 }
+
