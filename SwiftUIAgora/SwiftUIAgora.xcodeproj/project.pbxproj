@@ -19,6 +19,7 @@
 		805C1491242288CE005888D9 /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = 805C1490242288CE005888D9 /* Client.swift */; };
 		805C1493242288E1005888D9 /* Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 805C1492242288E1005888D9 /* Convenience.swift */; };
 		805C149824229E52005888D9 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 805C149724229E52005888D9 /* SignUpView.swift */; };
+		806B8E0724295B1B007CBD9D /* ReportBug.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806B8E0624295B1B007CBD9D /* ReportBug.swift */; };
 		8088E5D224143ED500CE92F1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8088E5D124143ED500CE92F1 /* AppDelegate.swift */; };
 		8088E5D424143ED500CE92F1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8088E5D324143ED500CE92F1 /* SceneDelegate.swift */; };
 		8088E5D624143ED500CE92F1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8088E5D524143ED500CE92F1 /* ContentView.swift */; };
@@ -52,6 +53,7 @@
 		805C1490242288CE005888D9 /* Client.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
 		805C1492242288E1005888D9 /* Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Convenience.swift; sourceTree = "<group>"; };
 		805C149724229E52005888D9 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		806B8E0624295B1B007CBD9D /* ReportBug.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportBug.swift; sourceTree = "<group>"; };
 		8088E5CE24143ED500CE92F1 /* SwiftUIAgora.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIAgora.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8088E5D124143ED500CE92F1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8088E5D324143ED500CE92F1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -143,6 +145,7 @@
 		805C148A24228804005888D9 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				806B8E0524295AEE007CBD9D /* Report Bug */,
 				801E97CD2426B72800699D06 /* Options */,
 				80294EB324262FF400C94FC7 /* Voting Algorithm */,
 				80294EB02426167000C94FC7 /* Add Candidates */,
@@ -203,6 +206,14 @@
 				805C149724229E52005888D9 /* SignUpView.swift */,
 			);
 			path = "Sign UP";
+			sourceTree = "<group>";
+		};
+		806B8E0524295AEE007CBD9D /* Report Bug */ = {
+			isa = PBXGroup;
+			children = (
+				806B8E0624295B1B007CBD9D /* ReportBug.swift */,
+			);
+			path = "Report Bug";
 			sourceTree = "<group>";
 		};
 		8088E5C524143ED500CE92F1 = {
@@ -375,6 +386,7 @@
 				803EFE95241EB86B00EA8E8C /* ForgotPassword.swift in Sources */,
 				801C3609242941F400C5ED12 /* Options.swift in Sources */,
 				801EE08124234BD30039E1EF /* TabBarSwiftUIView.swift in Sources */,
+				806B8E0724295B1B007CBD9D /* ReportBug.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

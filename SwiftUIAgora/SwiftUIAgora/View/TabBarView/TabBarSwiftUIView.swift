@@ -49,7 +49,7 @@ struct TabBarSwiftUIView: View {
                             Text("About Us")
                         }
                 }.tag(4)
-                Text("Report A Bug Here")
+                ReportBug()
                     .tabItem {
                         VStack {
                             Image("Bug")
