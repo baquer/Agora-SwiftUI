@@ -1,0 +1,16 @@
+PODS:
+  - FTPopOverMenu_Swift (0.2.0)
+
+DEPENDENCIES:
+  - FTPopOverMenu_Swift (~> 0.2.0)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - FTPopOverMenu_Swift
+
+SPEC CHECKSUMS:
+  FTPopOverMenu_Swift: 44d95f702ef643f902c60d7e49553dfc0e874dac
+
+PODFILE CHECKSUM: b37a04532a3cd2c4289853652e30b81b4f549497
+
+COCOAPODS: 1.7.2

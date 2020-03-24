@@ -7,6 +7,7 @@
 //
 
 import SwiftUI
+import FTPopOverMenu_Swift
 
 struct TabBarSwiftUIView: View {
     
@@ -79,5 +80,19 @@ struct moreButtonContent: View {
             .resizable()
             .frame(width: 40, height: 35)
             .foregroundColor(.white)
+            .contextMenu {
+                Button(action: {
+                }) {
+                    Text("Invite Friends")
+                    Image(systemName: "checkmark.circle.fill")
+                    .foregroundColor(.red)
+                }
+
+                Button(action: {
+                }) {
+                    Text("Logout")
+                    Image("logout")
+                }
+            }
     }
 }

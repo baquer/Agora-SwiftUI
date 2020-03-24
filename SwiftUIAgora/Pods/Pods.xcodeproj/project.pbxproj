@@ -1,0 +1,805 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0193AFA5288AFD2B2D4B45856EC5AF61 /* FTPopOverMenu_Swift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7CF44B39FFEA4247538EA53B6EAA4ABD /* FTPopOverMenu_Swift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0D6CDF752BA20D52B210E17C19F3DD7A /* FTPopOverMenu_Swift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BC41CE52980C5DBA972E81E69B546BE /* FTPopOverMenu_Swift-dummy.m */; };
+		283F4D585A1C87CBEE6150D31DE22F26 /* UIControl+Point.swift in Sources */ = {isa = PBXBuildFile; fileRef = A072AE62298F122CA3958587D3889A34 /* UIControl+Point.swift */; };
+		382473AC2C59EE8D594DC343BCCDCF23 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		4B0E127344148D35A70CA75F8EEB4D25 /* Pods-SwiftUIAgora-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2860ACC222D079CD041A9582EC6F7CB5 /* Pods-SwiftUIAgora-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4ED4CC550C71968819EE5E0B53F8274D /* FTPopOverMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480D3773001EDBAC780C09A8120E2F7C /* FTPopOverMenuCell.swift */; };
+		505FFC1E7B350DF5FA108D662610E314 /* Pods-SwiftUIAgoraUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 71637204A25E6A844A9F5D43239C1FD2 /* Pods-SwiftUIAgoraUITests-dummy.m */; };
+		770C91285C1A9E698EBB50E103820FB3 /* FTConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624867D544AF3203086847B8C37F365C /* FTConfiguration.swift */; };
+		7C43739BF1581DE5DF35A1FA8D68FEB2 /* FTPopOverMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D929E26E1ECEF19CD08FF6B581CF72 /* FTPopOverMenu.swift */; };
+		816015420B491C437BB19139172FD015 /* Pods-SwiftUIAgora-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 915FCF2B376E6DE0E51D07271CDBD0EB /* Pods-SwiftUIAgora-dummy.m */; };
+		849E1441D4DCBFD826F77ABEA94EF6D5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		8BAE8067D660BDDFF39E46971DB65CAF /* FT+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF64FF7E2AC14DEE7C12FADE01E2A274 /* FT+Extension.swift */; };
+		A0D4E7112F48D5935104483FEF1516CC /* Pods-SwiftUIAgoraUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C8DDD1A29D058248C36F39811858F03 /* Pods-SwiftUIAgoraUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C88DBCF1B7743A12A1073A6B5DD056A7 /* FTCellConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0FC06D603204FB72FA3B72AE11E721D /* FTCellConfiguration.swift */; };
+		CFEBCF3F8EA3072C9EDCF777050EFEAA /* UIScreen+Frame.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C89D7CDBC5BCE778733FBF4D919AE1 /* UIScreen+Frame.swift */; };
+		D1EEA64F0B5BBB58A6F598B0E783CA4B /* FTConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD410E3DD028D628FBA26CEF7C1F3862 /* FTConstants.swift */; };
+		DC33482D10B191FA482ADA4AAAE4420D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		00DFE7968BB5594D14577EC0388A6435 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 989619F863D399C5538843E81223983E;
+			remoteInfo = FTPopOverMenu_Swift;
+		};
+		F975DCDC499863B44BEEC7CFB0C92E3B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0D509039017F98EA15E26F2EA94DDADD;
+			remoteInfo = "Pods-SwiftUIAgora";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1FE976792D45F294081C16E92EBC1E36 /* Pods-SwiftUIAgoraUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SwiftUIAgoraUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		2766E211016ED57D4F9773C67BA09EF2 /* FTPopOverMenu_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FTPopOverMenu_Swift.framework; path = FTPopOverMenu_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2860ACC222D079CD041A9582EC6F7CB5 /* Pods-SwiftUIAgora-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SwiftUIAgora-umbrella.h"; sourceTree = "<group>"; };
+		2C8DDD1A29D058248C36F39811858F03 /* Pods-SwiftUIAgoraUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SwiftUIAgoraUITests-umbrella.h"; sourceTree = "<group>"; };
+		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		386FCF7B7B8C3E27B560BFB99884A321 /* Pods_SwiftUIAgoraUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SwiftUIAgoraUITests.framework; path = "Pods-SwiftUIAgoraUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		480D3773001EDBAC780C09A8120E2F7C /* FTPopOverMenuCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FTPopOverMenuCell.swift; path = FTPopOverMenu_Swift/FTPopOverMenuCell.swift; sourceTree = "<group>"; };
+		5BC41CE52980C5DBA972E81E69B546BE /* FTPopOverMenu_Swift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FTPopOverMenu_Swift-dummy.m"; sourceTree = "<group>"; };
+		624867D544AF3203086847B8C37F365C /* FTConfiguration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FTConfiguration.swift; path = FTPopOverMenu_Swift/FTConfiguration.swift; sourceTree = "<group>"; };
+		7095008527B9AD58FC2540AD9C483C71 /* FTPopOverMenu_Swift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FTPopOverMenu_Swift.modulemap; sourceTree = "<group>"; };
+		71637204A25E6A844A9F5D43239C1FD2 /* Pods-SwiftUIAgoraUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SwiftUIAgoraUITests-dummy.m"; sourceTree = "<group>"; };
+		7522758ADB0C66F6F0626BBC77594D1C /* FTPopOverMenu_Swift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FTPopOverMenu_Swift.xcconfig; sourceTree = "<group>"; };
+		79C591DFA9BECF85DB6C18A080D5B24B /* Pods-SwiftUIAgora-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SwiftUIAgora-frameworks.sh"; sourceTree = "<group>"; };
+		7CF44B39FFEA4247538EA53B6EAA4ABD /* FTPopOverMenu_Swift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FTPopOverMenu_Swift-umbrella.h"; sourceTree = "<group>"; };
+		915FCF2B376E6DE0E51D07271CDBD0EB /* Pods-SwiftUIAgora-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SwiftUIAgora-dummy.m"; sourceTree = "<group>"; };
+		91CCBD244E4B222E28D8948D893738C8 /* Pods-SwiftUIAgoraUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SwiftUIAgoraUITests-Info.plist"; sourceTree = "<group>"; };
+		94D929E26E1ECEF19CD08FF6B581CF72 /* FTPopOverMenu.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FTPopOverMenu.swift; path = FTPopOverMenu_Swift/FTPopOverMenu.swift; sourceTree = "<group>"; };
+		9B3D55D7720FA1653CF3BE67A9D889D8 /* Pods-SwiftUIAgora-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SwiftUIAgora-Info.plist"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A072AE62298F122CA3958587D3889A34 /* UIControl+Point.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIControl+Point.swift"; path = "FTPopOverMenu_Swift/UIControl+Point.swift"; sourceTree = "<group>"; };
+		A5D5E1C0E2DC3FCE9A6C653C996154BA /* Pods-SwiftUIAgoraUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SwiftUIAgoraUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		A92E3C56B65515EDA27F56879546B2B4 /* FTPopOverMenu_Swift-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "FTPopOverMenu_Swift-Info.plist"; sourceTree = "<group>"; };
+		AD410E3DD028D628FBA26CEF7C1F3862 /* FTConstants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FTConstants.swift; path = FTPopOverMenu_Swift/FTConstants.swift; sourceTree = "<group>"; };
+		AF186F3118F885865DC3A0B0545A3615 /* Pods-SwiftUIAgoraUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SwiftUIAgoraUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		B0FC06D603204FB72FA3B72AE11E721D /* FTCellConfiguration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FTCellConfiguration.swift; path = FTPopOverMenu_Swift/FTCellConfiguration.swift; sourceTree = "<group>"; };
+		B20A95B1E704D5F0C6B164B991216134 /* Pods-SwiftUIAgora.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SwiftUIAgora.modulemap"; sourceTree = "<group>"; };
+		B49F3441727531B01BBE23131BB17BA6 /* Pods-SwiftUIAgora-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SwiftUIAgora-acknowledgements.plist"; sourceTree = "<group>"; };
+		BDE7A4FD89DA9141DDA4239D9C716769 /* Pods-SwiftUIAgora.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SwiftUIAgora.release.xcconfig"; sourceTree = "<group>"; };
+		BF64FF7E2AC14DEE7C12FADE01E2A274 /* FT+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "FT+Extension.swift"; path = "FTPopOverMenu_Swift/FT+Extension.swift"; sourceTree = "<group>"; };
+		C43465CDEB7FB5C415250024FE463E9E /* Pods-SwiftUIAgora-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SwiftUIAgora-acknowledgements.markdown"; sourceTree = "<group>"; };
+		D71C6F09DF2AF61F0AE3AF38C8171C1C /* Pods-SwiftUIAgora.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SwiftUIAgora.debug.xcconfig"; sourceTree = "<group>"; };
+		E2C89D7CDBC5BCE778733FBF4D919AE1 /* UIScreen+Frame.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIScreen+Frame.swift"; path = "FTPopOverMenu_Swift/UIScreen+Frame.swift"; sourceTree = "<group>"; };
+		E40D90364F3A66B47C0179CD1B5877C2 /* Pods_SwiftUIAgora.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SwiftUIAgora.framework; path = "Pods-SwiftUIAgora.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F14EF00AC79DAFCE58BDCC9158185D75 /* Pods-SwiftUIAgoraUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SwiftUIAgoraUITests.release.xcconfig"; sourceTree = "<group>"; };
+		F5AEA1593CAE9109F8159D4EA41477B6 /* Pods-SwiftUIAgoraUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SwiftUIAgoraUITests.modulemap"; sourceTree = "<group>"; };
+		FDBF5EEDC3DEC043ABC074B868C6A727 /* FTPopOverMenu_Swift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FTPopOverMenu_Swift-prefix.pch"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6370CEA1A5F14DD83690DD474A542059 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				849E1441D4DCBFD826F77ABEA94EF6D5 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B754579E8EA009BBE794041EF44A4FB4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				382473AC2C59EE8D594DC343BCCDCF23 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8BF2F7F25265429C64BB8289F61D4A7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC33482D10B191FA482ADA4AAAE4420D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		42F93AABAB966EEC49E22CCA500592C2 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				82702608417DFC74AFE7A42F516F848D /* Pods-SwiftUIAgora */,
+				6BAB70F8B533B42854B86D0E10FACFE4 /* Pods-SwiftUIAgoraUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		6BAB70F8B533B42854B86D0E10FACFE4 /* Pods-SwiftUIAgoraUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F5AEA1593CAE9109F8159D4EA41477B6 /* Pods-SwiftUIAgoraUITests.modulemap */,
+				1FE976792D45F294081C16E92EBC1E36 /* Pods-SwiftUIAgoraUITests-acknowledgements.markdown */,
+				A5D5E1C0E2DC3FCE9A6C653C996154BA /* Pods-SwiftUIAgoraUITests-acknowledgements.plist */,
+				71637204A25E6A844A9F5D43239C1FD2 /* Pods-SwiftUIAgoraUITests-dummy.m */,
+				91CCBD244E4B222E28D8948D893738C8 /* Pods-SwiftUIAgoraUITests-Info.plist */,
+				2C8DDD1A29D058248C36F39811858F03 /* Pods-SwiftUIAgoraUITests-umbrella.h */,
+				AF186F3118F885865DC3A0B0545A3615 /* Pods-SwiftUIAgoraUITests.debug.xcconfig */,
+				F14EF00AC79DAFCE58BDCC9158185D75 /* Pods-SwiftUIAgoraUITests.release.xcconfig */,
+			);
+			name = "Pods-SwiftUIAgoraUITests";
+			path = "Target Support Files/Pods-SwiftUIAgoraUITests";
+			sourceTree = "<group>";
+		};
+		77653632DF98C151870E8D5E90C2ED8F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C7E9291BD1B0ED68920969F63DCA721A /* FTPopOverMenu_Swift */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		82702608417DFC74AFE7A42F516F848D /* Pods-SwiftUIAgora */ = {
+			isa = PBXGroup;
+			children = (
+				B20A95B1E704D5F0C6B164B991216134 /* Pods-SwiftUIAgora.modulemap */,
+				C43465CDEB7FB5C415250024FE463E9E /* Pods-SwiftUIAgora-acknowledgements.markdown */,
+				B49F3441727531B01BBE23131BB17BA6 /* Pods-SwiftUIAgora-acknowledgements.plist */,
+				915FCF2B376E6DE0E51D07271CDBD0EB /* Pods-SwiftUIAgora-dummy.m */,
+				79C591DFA9BECF85DB6C18A080D5B24B /* Pods-SwiftUIAgora-frameworks.sh */,
+				9B3D55D7720FA1653CF3BE67A9D889D8 /* Pods-SwiftUIAgora-Info.plist */,
+				2860ACC222D079CD041A9582EC6F7CB5 /* Pods-SwiftUIAgora-umbrella.h */,
+				D71C6F09DF2AF61F0AE3AF38C8171C1C /* Pods-SwiftUIAgora.debug.xcconfig */,
+				BDE7A4FD89DA9141DDA4239D9C716769 /* Pods-SwiftUIAgora.release.xcconfig */,
+			);
+			name = "Pods-SwiftUIAgora";
+			path = "Target Support Files/Pods-SwiftUIAgora";
+			sourceTree = "<group>";
+		};
+		89ACAAF3694ADF66B77777762BC4F403 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2766E211016ED57D4F9773C67BA09EF2 /* FTPopOverMenu_Swift.framework */,
+				E40D90364F3A66B47C0179CD1B5877C2 /* Pods_SwiftUIAgora.framework */,
+				386FCF7B7B8C3E27B560BFB99884A321 /* Pods_SwiftUIAgoraUITests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A2E0890676158EB87CD7A1C28109D25E /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7095008527B9AD58FC2540AD9C483C71 /* FTPopOverMenu_Swift.modulemap */,
+				7522758ADB0C66F6F0626BBC77594D1C /* FTPopOverMenu_Swift.xcconfig */,
+				5BC41CE52980C5DBA972E81E69B546BE /* FTPopOverMenu_Swift-dummy.m */,
+				A92E3C56B65515EDA27F56879546B2B4 /* FTPopOverMenu_Swift-Info.plist */,
+				FDBF5EEDC3DEC043ABC074B868C6A727 /* FTPopOverMenu_Swift-prefix.pch */,
+				7CF44B39FFEA4247538EA53B6EAA4ABD /* FTPopOverMenu_Swift-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/FTPopOverMenu_Swift";
+			sourceTree = "<group>";
+		};
+		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		C7E9291BD1B0ED68920969F63DCA721A /* FTPopOverMenu_Swift */ = {
+			isa = PBXGroup;
+			children = (
+				BF64FF7E2AC14DEE7C12FADE01E2A274 /* FT+Extension.swift */,
+				B0FC06D603204FB72FA3B72AE11E721D /* FTCellConfiguration.swift */,
+				624867D544AF3203086847B8C37F365C /* FTConfiguration.swift */,
+				AD410E3DD028D628FBA26CEF7C1F3862 /* FTConstants.swift */,
+				94D929E26E1ECEF19CD08FF6B581CF72 /* FTPopOverMenu.swift */,
+				480D3773001EDBAC780C09A8120E2F7C /* FTPopOverMenuCell.swift */,
+				A072AE62298F122CA3958587D3889A34 /* UIControl+Point.swift */,
+				E2C89D7CDBC5BCE778733FBF4D919AE1 /* UIScreen+Frame.swift */,
+				A2E0890676158EB87CD7A1C28109D25E /* Support Files */,
+			);
+			name = FTPopOverMenu_Swift;
+			path = FTPopOverMenu_Swift;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				77653632DF98C151870E8D5E90C2ED8F /* Pods */,
+				89ACAAF3694ADF66B77777762BC4F403 /* Products */,
+				42F93AABAB966EEC49E22CCA500592C2 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		27F9BFF6A51166923881E6845594879C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B0E127344148D35A70CA75F8EEB4D25 /* Pods-SwiftUIAgora-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		742DE6CA568BD35152D6DF141EC99B86 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0D4E7112F48D5935104483FEF1516CC /* Pods-SwiftUIAgoraUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B81B027108B4BF01F77286054B42E1E6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0193AFA5288AFD2B2D4B45856EC5AF61 /* FTPopOverMenu_Swift-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0D509039017F98EA15E26F2EA94DDADD /* Pods-SwiftUIAgora */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5E44BB0C1FA27B4C2EB7E9D6984A543F /* Build configuration list for PBXNativeTarget "Pods-SwiftUIAgora" */;
+			buildPhases = (
+				27F9BFF6A51166923881E6845594879C /* Headers */,
+				97E544F7560C4CCBECCBAD535D7AA54E /* Sources */,
+				B754579E8EA009BBE794041EF44A4FB4 /* Frameworks */,
+				5D86FB4A1CB5D2B3F1406A3C1AFACBC9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E7B3E37D25DF959657011AD46ED8BFFE /* PBXTargetDependency */,
+			);
+			name = "Pods-SwiftUIAgora";
+			productName = "Pods-SwiftUIAgora";
+			productReference = E40D90364F3A66B47C0179CD1B5877C2 /* Pods_SwiftUIAgora.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		989619F863D399C5538843E81223983E /* FTPopOverMenu_Swift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BFB4BF174D5B0894019702BFAE0C5A81 /* Build configuration list for PBXNativeTarget "FTPopOverMenu_Swift" */;
+			buildPhases = (
+				B81B027108B4BF01F77286054B42E1E6 /* Headers */,
+				9B7336DBE2E9AA6C4D317064817FF86E /* Sources */,
+				6370CEA1A5F14DD83690DD474A542059 /* Frameworks */,
+				0151F037151E64A7C37E9898430045FB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FTPopOverMenu_Swift;
+			productName = FTPopOverMenu_Swift;
+			productReference = 2766E211016ED57D4F9773C67BA09EF2 /* FTPopOverMenu_Swift.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A28374A965EAA28FCAA51E1DB7CB28B1 /* Pods-SwiftUIAgoraUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 530A675B8DC1A6244EF1F6EEB5E6CA4A /* Build configuration list for PBXNativeTarget "Pods-SwiftUIAgoraUITests" */;
+			buildPhases = (
+				742DE6CA568BD35152D6DF141EC99B86 /* Headers */,
+				422EE775B32650BFE4073E124AFA8732 /* Sources */,
+				F8BF2F7F25265429C64BB8289F61D4A7 /* Frameworks */,
+				B7C758A5D8094AE7894812345A2C4332 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				43BBE916547BA4160E16BE02540149E3 /* PBXTargetDependency */,
+			);
+			name = "Pods-SwiftUIAgoraUITests";
+			productName = "Pods-SwiftUIAgoraUITests";
+			productReference = 386FCF7B7B8C3E27B560BFB99884A321 /* Pods_SwiftUIAgoraUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 89ACAAF3694ADF66B77777762BC4F403 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				989619F863D399C5538843E81223983E /* FTPopOverMenu_Swift */,
+				0D509039017F98EA15E26F2EA94DDADD /* Pods-SwiftUIAgora */,
+				A28374A965EAA28FCAA51E1DB7CB28B1 /* Pods-SwiftUIAgoraUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0151F037151E64A7C37E9898430045FB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D86FB4A1CB5D2B3F1406A3C1AFACBC9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B7C758A5D8094AE7894812345A2C4332 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		422EE775B32650BFE4073E124AFA8732 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				505FFC1E7B350DF5FA108D662610E314 /* Pods-SwiftUIAgoraUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		97E544F7560C4CCBECCBAD535D7AA54E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				816015420B491C437BB19139172FD015 /* Pods-SwiftUIAgora-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9B7336DBE2E9AA6C4D317064817FF86E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BAE8067D660BDDFF39E46971DB65CAF /* FT+Extension.swift in Sources */,
+				C88DBCF1B7743A12A1073A6B5DD056A7 /* FTCellConfiguration.swift in Sources */,
+				770C91285C1A9E698EBB50E103820FB3 /* FTConfiguration.swift in Sources */,
+				D1EEA64F0B5BBB58A6F598B0E783CA4B /* FTConstants.swift in Sources */,
+				7C43739BF1581DE5DF35A1FA8D68FEB2 /* FTPopOverMenu.swift in Sources */,
+				0D6CDF752BA20D52B210E17C19F3DD7A /* FTPopOverMenu_Swift-dummy.m in Sources */,
+				4ED4CC550C71968819EE5E0B53F8274D /* FTPopOverMenuCell.swift in Sources */,
+				283F4D585A1C87CBEE6150D31DE22F26 /* UIControl+Point.swift in Sources */,
+				CFEBCF3F8EA3072C9EDCF777050EFEAA /* UIScreen+Frame.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		43BBE916547BA4160E16BE02540149E3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-SwiftUIAgora";
+			target = 0D509039017F98EA15E26F2EA94DDADD /* Pods-SwiftUIAgora */;
+			targetProxy = F975DCDC499863B44BEEC7CFB0C92E3B /* PBXContainerItemProxy */;
+		};
+		E7B3E37D25DF959657011AD46ED8BFFE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FTPopOverMenu_Swift;
+			target = 989619F863D399C5538843E81223983E /* FTPopOverMenu_Swift */;
+			targetProxy = 00DFE7968BB5594D14577EC0388A6435 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		2BA1CA9E2D4878DDAB2B8A79B7F5C4CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7522758ADB0C66F6F0626BBC77594D1C /* FTPopOverMenu_Swift.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/FTPopOverMenu_Swift/FTPopOverMenu_Swift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FTPopOverMenu_Swift/FTPopOverMenu_Swift-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/FTPopOverMenu_Swift/FTPopOverMenu_Swift.modulemap";
+				PRODUCT_MODULE_NAME = FTPopOverMenu_Swift;
+				PRODUCT_NAME = FTPopOverMenu_Swift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5F58E63428B94986F700FB016FB4E8F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7522758ADB0C66F6F0626BBC77594D1C /* FTPopOverMenu_Swift.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/FTPopOverMenu_Swift/FTPopOverMenu_Swift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FTPopOverMenu_Swift/FTPopOverMenu_Swift-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/FTPopOverMenu_Swift/FTPopOverMenu_Swift.modulemap";
+				PRODUCT_MODULE_NAME = FTPopOverMenu_Swift;
+				PRODUCT_NAME = FTPopOverMenu_Swift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8AFD6CE7AEAF65A134D1EE3CBCDE2A54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F14EF00AC79DAFCE58BDCC9158185D75 /* Pods-SwiftUIAgoraUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-SwiftUIAgoraUITests/Pods-SwiftUIAgoraUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SwiftUIAgoraUITests/Pods-SwiftUIAgoraUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8F17DC3A99F99FBAD606CE6963886315 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		916E0404255105F480DC4950B7625F7A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		B13F0D17B4B0CC410417FD82B5618DFC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D71C6F09DF2AF61F0AE3AF38C8171C1C /* Pods-SwiftUIAgora.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-SwiftUIAgora/Pods-SwiftUIAgora-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SwiftUIAgora/Pods-SwiftUIAgora.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D5E4E7E16B28DF61229C176102B5FB06 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AF186F3118F885865DC3A0B0545A3615 /* Pods-SwiftUIAgoraUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-SwiftUIAgoraUITests/Pods-SwiftUIAgoraUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SwiftUIAgoraUITests/Pods-SwiftUIAgoraUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		ED7CCED166E08785C06DB605379F18F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BDE7A4FD89DA9141DDA4239D9C716769 /* Pods-SwiftUIAgora.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-SwiftUIAgora/Pods-SwiftUIAgora-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SwiftUIAgora/Pods-SwiftUIAgora.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				916E0404255105F480DC4950B7625F7A /* Debug */,
+				8F17DC3A99F99FBAD606CE6963886315 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		530A675B8DC1A6244EF1F6EEB5E6CA4A /* Build configuration list for PBXNativeTarget "Pods-SwiftUIAgoraUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D5E4E7E16B28DF61229C176102B5FB06 /* Debug */,
+				8AFD6CE7AEAF65A134D1EE3CBCDE2A54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5E44BB0C1FA27B4C2EB7E9D6984A543F /* Build configuration list for PBXNativeTarget "Pods-SwiftUIAgora" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B13F0D17B4B0CC410417FD82B5618DFC /* Debug */,
+				ED7CCED166E08785C06DB605379F18F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BFB4BF174D5B0894019702BFAE0C5A81 /* Build configuration list for PBXNativeTarget "FTPopOverMenu_Swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2BA1CA9E2D4878DDAB2B8A79B7F5C4CC /* Debug */,
+				5F58E63428B94986F700FB016FB4E8F9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

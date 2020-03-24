@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A5A229091A4452AF2EDC174 /* Pods_SwiftUIAgoraUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 194BD5BD4CBEFF5468E84D7C /* Pods_SwiftUIAgoraUITests.framework */; };
 		801C3609242941F400C5ED12 /* Options.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801C3608242941F400C5ED12 /* Options.swift */; };
 		801C360C2429425900C5ED12 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801C360B2429425900C5ED12 /* Helpers.swift */; };
 		801EE08124234BD30039E1EF /* TabBarSwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801EE08024234BD30039E1EF /* TabBarSwiftUIView.swift */; };
@@ -30,6 +31,7 @@
 		8088E5DE24143ED600CE92F1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8088E5DC24143ED600CE92F1 /* LaunchScreen.storyboard */; };
 		8088E5E924143ED700CE92F1 /* SwiftUIAgoraUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8088E5E824143ED700CE92F1 /* SwiftUIAgoraUITests.swift */; };
 		8088E5F424143F4E00CE92F1 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8088E5F324143F4E00CE92F1 /* LoginView.swift */; };
+		C975E8DC985226F3FDD32727 /* Pods_SwiftUIAgora.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FF2D668D6CCD761E2AC2543 /* Pods_SwiftUIAgora.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +45,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		194BD5BD4CBEFF5468E84D7C /* Pods_SwiftUIAgoraUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftUIAgoraUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5FF2D668D6CCD761E2AC2543 /* Pods_SwiftUIAgora.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftUIAgora.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		65F80895EA688002573BEBB7 /* Pods-SwiftUIAgoraUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftUIAgoraUITests.release.xcconfig"; path = "Target Support Files/Pods-SwiftUIAgoraUITests/Pods-SwiftUIAgoraUITests.release.xcconfig"; sourceTree = "<group>"; };
+		716CF85A81EDA11F6005A45F /* Pods-SwiftUIAgora.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftUIAgora.release.xcconfig"; path = "Target Support Files/Pods-SwiftUIAgora/Pods-SwiftUIAgora.release.xcconfig"; sourceTree = "<group>"; };
 		801C3608242941F400C5ED12 /* Options.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Options.swift; sourceTree = "<group>"; };
 		801C360B2429425900C5ED12 /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
 		801EE08024234BD30039E1EF /* TabBarSwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarSwiftUIView.swift; sourceTree = "<group>"; };
@@ -70,6 +76,8 @@
 		8088E5E824143ED700CE92F1 /* SwiftUIAgoraUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIAgoraUITests.swift; sourceTree = "<group>"; };
 		8088E5EA24143ED700CE92F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8088E5F324143F4E00CE92F1 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		BE925BF946E81D609F9DA08E /* Pods-SwiftUIAgora.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftUIAgora.debug.xcconfig"; path = "Target Support Files/Pods-SwiftUIAgora/Pods-SwiftUIAgora.debug.xcconfig"; sourceTree = "<group>"; };
+		D70AB8CFD571C447E88569F8 /* Pods-SwiftUIAgoraUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftUIAgoraUITests.debug.xcconfig"; path = "Target Support Files/Pods-SwiftUIAgoraUITests/Pods-SwiftUIAgoraUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +85,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C975E8DC985226F3FDD32727 /* Pods_SwiftUIAgora.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,12 +93,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A5A229091A4452AF2EDC174 /* Pods_SwiftUIAgoraUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		16D5B50CE89D485F63B372A1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5FF2D668D6CCD761E2AC2543 /* Pods_SwiftUIAgora.framework */,
+				194BD5BD4CBEFF5468E84D7C /* Pods_SwiftUIAgoraUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		801C360A2429423200C5ED12 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
@@ -244,6 +263,8 @@
 				8088E5D024143ED500CE92F1 /* SwiftUIAgora */,
 				8088E5E724143ED700CE92F1 /* SwiftUIAgoraUITests */,
 				8088E5CF24143ED500CE92F1 /* Products */,
+				A39C3BDB4B649CF027B06607 /* Pods */,
+				16D5B50CE89D485F63B372A1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -291,6 +312,18 @@
 			path = SwiftUIAgoraUITests;
 			sourceTree = "<group>";
 		};
+		A39C3BDB4B649CF027B06607 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BE925BF946E81D609F9DA08E /* Pods-SwiftUIAgora.debug.xcconfig */,
+				716CF85A81EDA11F6005A45F /* Pods-SwiftUIAgora.release.xcconfig */,
+				D70AB8CFD571C447E88569F8 /* Pods-SwiftUIAgoraUITests.debug.xcconfig */,
+				65F80895EA688002573BEBB7 /* Pods-SwiftUIAgoraUITests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -298,9 +331,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8088E5ED24143ED700CE92F1 /* Build configuration list for PBXNativeTarget "SwiftUIAgora" */;
 			buildPhases = (
+				0E0092EA0CEE966B9E8D7784 /* [CP] Check Pods Manifest.lock */,
 				8088E5CA24143ED500CE92F1 /* Sources */,
 				8088E5CB24143ED500CE92F1 /* Frameworks */,
 				8088E5CC24143ED500CE92F1 /* Resources */,
+				668869BDD5351AF1EFB484D3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -315,6 +350,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8088E5F024143ED700CE92F1 /* Build configuration list for PBXNativeTarget "SwiftUIAgoraUITests" */;
 			buildPhases = (
+				0B8A3BBCC3C20568C4B82C68 /* [CP] Check Pods Manifest.lock */,
 				8088E5E024143ED700CE92F1 /* Sources */,
 				8088E5E124143ED700CE92F1 /* Frameworks */,
 				8088E5E224143ED700CE92F1 /* Resources */,
@@ -386,6 +422,70 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0B8A3BBCC3C20568C4B82C68 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SwiftUIAgoraUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		0E0092EA0CEE966B9E8D7784 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SwiftUIAgora-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		668869BDD5351AF1EFB484D3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SwiftUIAgora/Pods-SwiftUIAgora-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SwiftUIAgora/Pods-SwiftUIAgora-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SwiftUIAgora/Pods-SwiftUIAgora-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8088E5CA24143ED500CE92F1 /* Sources */ = {
@@ -560,6 +660,7 @@
 		};
 		8088E5EE24143ED700CE92F1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BE925BF946E81D609F9DA08E /* Pods-SwiftUIAgora.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -579,6 +680,7 @@
 		};
 		8088E5EF24143ED700CE92F1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 716CF85A81EDA11F6005A45F /* Pods-SwiftUIAgora.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -598,6 +700,7 @@
 		};
 		8088E5F124143ED700CE92F1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D70AB8CFD571C447E88569F8 /* Pods-SwiftUIAgoraUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -617,6 +720,7 @@
 		};
 		8088E5F224143ED700CE92F1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 65F80895EA688002573BEBB7 /* Pods-SwiftUIAgoraUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
