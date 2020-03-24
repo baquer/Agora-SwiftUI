@@ -7,7 +7,6 @@
 //
 
 import SwiftUI
-import FTPopOverMenu_Swift
 
 struct TabBarSwiftUIView: View {
     

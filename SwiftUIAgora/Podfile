@@ -5,7 +5,6 @@ target 'SwiftUIAgora' do
   use_frameworks!
 
   # Pods for SwiftUIAgora
-  pod 'FTPopOverMenu_Swift', '~> 0.2.0'
 
   target 'SwiftUIAgoraUITests' do
     inherit! :search_paths
