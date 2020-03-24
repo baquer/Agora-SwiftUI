@@ -10,7 +10,8 @@ import SwiftUI
 
 struct TabBarSwiftUIView: View {
     
-    @State private var selection = 5
+    @State var selection = 5
+    @State var popOver: Bool = false
 
     init() {
         UITabBar.appearance().barTintColor = UIColor.black
@@ -57,11 +58,26 @@ struct TabBarSwiftUIView: View {
                         }
                 }.tag(5)
             }.accentColor(Color.white)
-        }
+        }.navigationBarItems(trailing:
+            Button(action: {
+                self.popOver = true
+            }) {
+               moreButtonContent()
+            }
+        )
     }
 }
 struct TabBarSwiftUIView_Previews: PreviewProvider {
     static var previews: some View {
         TabBarSwiftUIView()
+    }
+}
+
+struct moreButtonContent: View {
+    var body: some View {
+        return Image("MV")
+            .resizable()
+            .frame(width: 40, height: 35)
+            .foregroundColor(.white)
     }
 }
