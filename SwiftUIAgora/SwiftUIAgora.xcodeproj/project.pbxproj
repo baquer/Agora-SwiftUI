@@ -16,6 +16,7 @@
 		80294EB52426301700C94FC7 /* VotingAlgorithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80294EB42426301700C94FC7 /* VotingAlgorithm.swift */; };
 		802AFFEE2423DE0000A46124 /* CreateElectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802AFFED2423DE0000A46124 /* CreateElectionView.swift */; };
 		803EFE95241EB86B00EA8E8C /* ForgotPassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803EFE94241EB86B00EA8E8C /* ForgotPassword.swift */; };
+		804F1CF7242AA4FE00D4A618 /* EditProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 804F1CF6242AA4FE00D4A618 /* EditProfile.swift */; };
 		805A9C4F24256A77005E27EE /* SwiftUIAgora.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 805A9C4D24256A77005E27EE /* SwiftUIAgora.xcdatamodeld */; };
 		805C1491242288CE005888D9 /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = 805C1490242288CE005888D9 /* Client.swift */; };
 		805C1493242288E1005888D9 /* Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 805C1492242288E1005888D9 /* Convenience.swift */; };
@@ -57,6 +58,7 @@
 		80294EB42426301700C94FC7 /* VotingAlgorithm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VotingAlgorithm.swift; sourceTree = "<group>"; };
 		802AFFED2423DE0000A46124 /* CreateElectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateElectionView.swift; sourceTree = "<group>"; };
 		803EFE94241EB86B00EA8E8C /* ForgotPassword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPassword.swift; sourceTree = "<group>"; };
+		804F1CF6242AA4FE00D4A618 /* EditProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfile.swift; sourceTree = "<group>"; };
 		805A9C4E24256A77005E27EE /* SwiftUIAgora.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SwiftUIAgora.xcdatamodel; sourceTree = "<group>"; };
 		805C1490242288CE005888D9 /* Client.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
 		805C1492242288E1005888D9 /* Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Convenience.swift; sourceTree = "<group>"; };
@@ -165,9 +167,18 @@
 			path = "Create Elections";
 			sourceTree = "<group>";
 		};
+		804F1CF5242AA4D400D4A618 /* Edit Profile */ = {
+			isa = PBXGroup;
+			children = (
+				804F1CF6242AA4FE00D4A618 /* EditProfile.swift */,
+			);
+			path = "Edit Profile";
+			sourceTree = "<group>";
+		};
 		805C148A24228804005888D9 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				804F1CF5242AA4D400D4A618 /* Edit Profile */,
 				806B8E0B24296659007CBD9D /* About us */,
 				806B8E08242960AF007CBD9D /* Contact us */,
 				806B8E0524295AEE007CBD9D /* Report Bug */,
@@ -320,7 +331,6 @@
 				D70AB8CFD571C447E88569F8 /* Pods-SwiftUIAgoraUITests.debug.xcconfig */,
 				65F80895EA688002573BEBB7 /* Pods-SwiftUIAgoraUITests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -477,6 +487,7 @@
 				8088E5D224143ED500CE92F1 /* AppDelegate.swift in Sources */,
 				801EE0852423576A0039E1EF /* ElectionView.swift in Sources */,
 				8088E5F424143F4E00CE92F1 /* LoginView.swift in Sources */,
+				804F1CF7242AA4FE00D4A618 /* EditProfile.swift in Sources */,
 				80294EB2242617B800C94FC7 /* AddCandidatesNames.swift in Sources */,
 				806B8E0D24296677007CBD9D /* AboutUs.swift in Sources */,
 				805C1491242288CE005888D9 /* Client.swift in Sources */,

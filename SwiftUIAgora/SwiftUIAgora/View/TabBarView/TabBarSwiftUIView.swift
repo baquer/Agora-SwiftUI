@@ -29,7 +29,7 @@ struct TabBarSwiftUIView: View {
                             Text("Elections")
                         }
                 }.tag(1)
-                Text("Edit Your Profile Here")
+                EditProfile()
                     .tabItem {
                         VStack {
                             Image("EditProfile")
