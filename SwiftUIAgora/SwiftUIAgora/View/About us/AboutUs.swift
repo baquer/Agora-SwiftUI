@@ -9,6 +9,7 @@
 import SwiftUI
 
 struct AboutUs: View {
+    let aboutUsURL = URL(string: "https://agora-frontend.herokuapp.com")
     var body: some View {
         ZStack {
             Color.black
@@ -20,22 +21,18 @@ struct AboutUs: View {
                 }
                 Spacer()
                 VStack(alignment: .leading) {
-                    Text("Feel free to contact us on Gitter and work with us on GitLab").font(.callout).fontWeight(.bold).colorInvert()
-                }
-                Spacer()
-                VStack(spacing: 20) {
-                    Button(action: {
-
-                    }) {
-                       gitterButtonContent()
+                    Text("Agora vote is a voting platform where users can create elections and invite friends to cast their votes. It supports a wide range of voting algorithms some of which are Majority, Egalitarian, Australian STV just to name a few").font(.callout).fontWeight(.bold).colorInvert()
                     }
-                    Button(action: {
-
-                    }) {
-                       gitLabButtonContent()
-                    }
-                }
                 Spacer()
+                VStack {
+                Button(action: {
+                        UIApplication.shared.open(self.aboutUsURL!)
+                
+                }) {
+                contactUsButtonContent()
+                  }
+               }
+               Spacer()
             }
         }
     }
@@ -46,9 +43,9 @@ struct AboutUs_Previews: PreviewProvider {
         AboutUs()
     }
 }
-struct gitterButtonContent: View {
+struct contactUsButtonContent: View {
     var body: some View {
-        return Text("GITTER")
+        return Text("Learn More")
             .font(.headline)
             .foregroundColor(.white)
             .padding()
@@ -58,14 +55,3 @@ struct gitterButtonContent: View {
     }
 }
 
-struct gitLabButtonContent: View {
-    var body: some View {
-        return Text("GITLAB")
-            .font(.headline)
-            .foregroundColor(.white)
-            .padding()
-            .frame(width: 300, height: 50)
-            .background(Color(hex: 0xFFBE00))
-            .cornerRadius(15.0)
-    }
-}

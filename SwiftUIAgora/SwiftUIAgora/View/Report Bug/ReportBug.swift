@@ -9,6 +9,7 @@
 import SwiftUI
 
 struct ReportBug: View {
+    let reportBugURL = URL(string: "https://gitlab.com/aossie/agora-ios/issues")
     var body: some View {
         ZStack {
             Color.black
@@ -26,6 +27,7 @@ struct ReportBug: View {
                 Spacer()
                 VStack {
                     Button(action: {
+                        UIApplication.shared.open(self.reportBugURL!)
 
                     }) {
                        reportBugButtonContent()

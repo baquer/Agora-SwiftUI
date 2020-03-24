@@ -9,6 +9,8 @@
 import SwiftUI
 
 struct ConatactUs: View {
+    let gitLabURL = URL(string: "https://gitlab.com/aossie/agora-ios")
+    let gitterURL = URL(string: "https://gitter.im/AOSSIE/Agora-iOS")
     var body: some View {
         ZStack {
             Color.black
@@ -20,14 +22,21 @@ struct ConatactUs: View {
                 }
                 Spacer()
                 VStack(alignment: .leading) {
-                    Text("Agora vote is a voting platform where users can create elections and invite friends to cast their votes. It supports a wide range of voting algorithms some of which are Majority, Egalitarian, Australian STV just to name a few").font(.callout).fontWeight(.bold).colorInvert()
+                    Text("Feel free to contact us on Gitter and work with us on GitLab").font(.callout).fontWeight(.bold).colorInvert()
                 }
                 Spacer()
-                VStack {
+                VStack(spacing: 20) {
                     Button(action: {
+                        UIApplication.shared.open(self.gitterURL!)
 
                     }) {
-                       contactUsButtonContent()
+                       gitterButtonContent()
+                    }
+                    Button(action: {
+                        UIApplication.shared.open(self.gitLabURL!)
+
+                    }) {
+                       gitLabButtonContent()
                     }
                 }
                 Spacer()
@@ -51,10 +60,21 @@ struct contactUsImageView: View {
         .padding(.bottom, 5)
     }
 }
-
-struct contactUsButtonContent: View {
+struct gitterButtonContent: View {
     var body: some View {
-        return Text("Learn More")
+        return Text("GITTER")
+            .font(.headline)
+            .foregroundColor(.white)
+            .padding()
+            .frame(width: 300, height: 50)
+            .background(Color(hex: 0xFFBE00))
+            .cornerRadius(15.0)
+    }
+}
+
+struct gitLabButtonContent: View {
+    var body: some View {
+        return Text("GITLAB")
             .font(.headline)
             .foregroundColor(.white)
             .padding()
