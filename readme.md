@@ -77,6 +77,17 @@ Run the app (⌘+R).and test it.
   </tr>
   <tr>
     <td><img src="/screenshots/Options1.png" height = "500" width="250"></td>
+    <td><img src="/screenshots/Edit Profile.png" height = "500" width="250"></td>
+  </tr>
+  </tr>
+  <tr>
+    <td><img src="/screenshots/AboutUS.png" height = "500" width="250"></td>
+    <td><img src="/screenshots/ContactUs.png" height = "500" width="250"></td>
+  </tr>
+  </tr>
+  <tr>
+    <td><img src="/screenshots/ReportBug.png" height = "500" width="250"></td>
+    <td><img src="/screenshots/menuView.png" height = "500" width="250"></td>
   </tr>
   </tr>
   </tr>
