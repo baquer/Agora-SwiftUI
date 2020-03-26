@@ -5,6 +5,7 @@ target 'SwiftUIAgora' do
   use_frameworks!
 
   # Pods for SwiftUIAgora
+  pod 'Alamofire'
 
   target 'SwiftUIAgoraUITests' do
     inherit! :search_paths
