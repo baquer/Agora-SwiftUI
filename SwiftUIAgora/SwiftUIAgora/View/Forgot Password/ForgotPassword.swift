@@ -67,7 +67,7 @@ struct ForgotPassword: View {
             if success {
                 print("Success!")
             } else {
-                print("Success!")
+                print("Failure!")
             }
         }
     }
