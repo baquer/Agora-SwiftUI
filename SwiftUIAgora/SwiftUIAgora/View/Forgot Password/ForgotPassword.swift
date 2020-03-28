@@ -23,17 +23,17 @@ struct ForgotPassword: View {
                     messageText()
                     bodyText()
                     Spacer()
-//                    TextField("Username", text: $username)
-//                    .padding()
-//                    .background(lightGreyColor)
-//                    .cornerRadius(5.0)
-//                    .padding(.bottom, 30)
-//                    .frame(width: 380, height: 0)
                     CustomTextField(placeHolder: "User Name", value: $username, lineColor: .black, width: 1)
                         .colorInvert()
                         .frame(width: 380)
                     Button(action: {
-                        print("Button tapped")
+                        self.resetPasswordPerformed(username: self.username) { (verified, status) in
+                            if verified {
+                                print("error")
+                            } else {
+                                print("Success")
+                            }
+                        }
                     }) {
                        sendLinkButtonContent()
                     }.padding()
@@ -42,8 +42,37 @@ struct ForgotPassword: View {
                         .navigationBarTitle("Reset Password", displayMode: .large)
                 }
             }
-        
     }
+    func resetPassword(_ params: [String: AnyObject], _ completion: @escaping(_ success: Bool, _ results: [String: AnyObject]?, _ error: String) -> Void) {
+        
+        let url = "https://agora-rest-api.herokuapp.com/api/v1/auth/forgotPassword/send/\(username)"
+        _ = Client.sharedInstance.makeRequest(url, .post, [:], parameters: params, completion: { (results, status, message) in
+
+               if results != nil && status == 200 {
+                completion(true, results as? [String: AnyObject], "success")
+               } else {
+                completion(false, nil, "fail")
+               }
+               return
+           })
+    }
+
+    func resetPasswordPerformed(username: String,completion: @escaping (Bool,String)->Void) {
+        let userName = username
+    let params: [String: AnyObject] = [
+        "username": userName as AnyObject
+        ]
+    resetPassword(params as [String: AnyObject]) { (success, result, message) in
+        DispatchQueue.main.async {
+            if success {
+                print("Success!")
+            } else {
+                print("Success!")
+            }
+        }
+    }
+    }
+
 }
 
 struct ForgotPassword_Previews: PreviewProvider {
