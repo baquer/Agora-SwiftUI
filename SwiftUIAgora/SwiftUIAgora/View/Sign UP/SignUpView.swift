@@ -26,32 +26,44 @@ struct SignUpView: View {
             ZStack {
                 Color.black
                 .edgesIgnoringSafeArea(.all)
-                ScrollView(Axis.Set.vertical, showsIndicators: true) {
                 VStack {
                     Spacer()
                     UserImage()
                     SignUpText()
                     Spacer()
-                    CustomTextField(placeHolder: "First Name", value: $firstName, lineColor: .black, width: 1)
-                    .frame(width:380)
-                    .colorInvert()
-                    CustomTextField(placeHolder: "Last Name", value: $lastName, lineColor: .black, width: 1)
-                    .frame(width:380)
-                    .colorInvert()
-                    CustomTextField(placeHolder: "User Name", value: $userName, lineColor: .black, width: 1)
-                    .frame(width:380)
-                    .colorInvert()
-                    CustomTextField(placeHolder: "Email", value: $email, lineColor: .black, width: 1)
-                    .frame(width:380)
-                    .colorInvert()
-                    CustomPasswordTextField(placeHolder: "Password", value: $password, lineColor: .black, width: 1)
-                    .frame(width: 380)
-                    .colorInvert()
-                    CustomTextField(placeHolder: "Write Your Question Here", value: $securityQuestions, lineColor: .black, width: 1)
-                    .frame(width:380)
-                    .colorInvert()
+                    ScrollView() {
+                      VStack {
+                        CustomTextField(placeHolder: "First Name", value: $firstName, lineColor: .black, width: 1)
+                                        .frame(width:380)
+                                        .colorInvert()
+                        CustomTextField(placeHolder: "Last Name", value: $lastName, lineColor: .black, width: 1)
+                                        .frame(width:380)
+                                        .colorInvert()
+                        CustomTextField(placeHolder: "User Name", value: $userName, lineColor: .black, width: 1)
+                                        .frame(width:380)
+                                        .colorInvert()
+                        CustomTextField(placeHolder: "Email", value: $email, lineColor: .black, width: 1)
+                                        .frame(width:380)
+                                        .colorInvert()
+                        CustomPasswordTextField(placeHolder: "Password", value: $password, lineColor: .black, width: 1)
+                                        .frame(width: 380)
+                                        .colorInvert()
+                        CustomTextField(placeHolder: "Write Your Question Here", value: $securityQuestions, lineColor: .black, width: 1)
+                                        .frame(width:380)
+                                        .colorInvert()
+                        CustomTextField(placeHolder: "Write Your Answer Here", value: $securityQuestions, lineColor: .black, width: 1)
+                        .frame(width:380)
+                        .colorInvert()
+                    }
                 }
-                .frame(maxWidth: .infinity)
+                    Spacer()
+                    VStack {
+                        Button(action: {
+                        }) {
+                            SignUpButtonContent()
+                        }
+                    }
+                    Spacer()
             }
         }
     }
@@ -71,5 +83,17 @@ struct SignUpText: View {
             .fontWeight(.semibold)
             .padding(.bottom, 75)
             .foregroundColor(.white)
+    }
+}
+
+struct SignUpButtonContent: View {
+    var body: some View {
+        return Text("Sign Up")
+            .font(.headline)
+            .foregroundColor(.white)
+            .padding()
+            .frame(width: 300, height: 50)
+            .background(Color(hex: 0xFFBE00))
+            .cornerRadius(15.0)
     }
 }
