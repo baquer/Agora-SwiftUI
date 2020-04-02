@@ -13,18 +13,18 @@ extension Client {
     
     func loginUser(_ params: [String: AnyObject], _ completion: @escaping(_ success: Bool, _ results: [String: AnyObject]?, _ error: String) -> Void) {
 
-        let url = "https://agora-rest-api.herokuapp.com/api/v1/auth/login"
+        let url = Constants.APIURL.logInURL
 
         let headerLogin = [
-            "accept": "application/json",
-            "Content-Type": "application/json"
+            Constants.convenience.accept: Constants.convenience.contentValue,
+            Constants.convenience.contentType: Constants.convenience.contentValue
         ]
     _ = makeRequest(url, .post, headerLogin, parameters: params, completion: { (results, status, message) in
 
                if results != nil && status == 200 {
-                completion(true, results as? [String: AnyObject], "Successfully Logged In")
+                completion(true, results as? [String: AnyObject], Constants.convenience.success)
                } else {
-                completion(false, nil, "Email ID / Password incorrect")
+                completion(false, nil, Constants.convenience.invalidFields)
                }
                return
            })

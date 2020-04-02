@@ -22,7 +22,7 @@ class Client: NSObject {
 
         func sendError(_ error: String) {
             debugPrint(error)
-            completion(nil, nil,NSError(domain: "makeRequestMethod", code: 1))
+            completion(nil, nil,NSError(domain: Constants.clientConstants.makeMethod, code: 1))
         }
 
 
@@ -30,7 +30,7 @@ class Client: NSObject {
             .responseJSON { (response: DataResponse<Any>) in
 
                 print(response)
-                print(response.request?.url ?? "Error: invalid URL")
+                print(response.request?.url ?? Constants.clientConstants.invalidURL)
 
                 switch(response.result) {
 
@@ -41,12 +41,12 @@ class Client: NSObject {
                     }
                     else {
                         
-                        completion(nil,nil, NSError(domain: "Problem connecting to server!",code: 1))
+                        completion(nil,nil, NSError(domain: Constants.clientConstants.serverProblem,code: 1))
                     }
                     break
 
                 case .failure( _):
-                    sendError("Problem connecting to server!")
+                    sendError(Constants.clientConstants.serverProblem)
                     break
                 }
         }

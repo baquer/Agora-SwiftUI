@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -32,6 +32,7 @@
 		8088E5DE24143ED600CE92F1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8088E5DC24143ED600CE92F1 /* LaunchScreen.storyboard */; };
 		8088E5E924143ED700CE92F1 /* SwiftUIAgoraUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8088E5E824143ED700CE92F1 /* SwiftUIAgoraUITests.swift */; };
 		8088E5F424143F4E00CE92F1 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8088E5F324143F4E00CE92F1 /* LoginView.swift */; };
+		80957F412435BFE0005770BC /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80957F402435BFE0005770BC /* Constants.swift */; };
 		C975E8DC985226F3FDD32727 /* Pods_SwiftUIAgora.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FF2D668D6CCD761E2AC2543 /* Pods_SwiftUIAgora.framework */; };
 /* End PBXBuildFile section */
 
@@ -78,6 +79,7 @@
 		8088E5E824143ED700CE92F1 /* SwiftUIAgoraUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIAgoraUITests.swift; sourceTree = "<group>"; };
 		8088E5EA24143ED700CE92F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8088E5F324143F4E00CE92F1 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		80957F402435BFE0005770BC /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		BE925BF946E81D609F9DA08E /* Pods-SwiftUIAgora.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftUIAgora.debug.xcconfig"; path = "Target Support Files/Pods-SwiftUIAgora/Pods-SwiftUIAgora.debug.xcconfig"; sourceTree = "<group>"; };
 		D70AB8CFD571C447E88569F8 /* Pods-SwiftUIAgoraUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftUIAgoraUITests.debug.xcconfig"; path = "Target Support Files/Pods-SwiftUIAgoraUITests/Pods-SwiftUIAgoraUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -115,6 +117,7 @@
 			isa = PBXGroup;
 			children = (
 				801C360B2429425900C5ED12 /* Helpers.swift */,
+				80957F402435BFE0005770BC /* Constants.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -513,6 +516,7 @@
 				805C149824229E52005888D9 /* SignUpView.swift in Sources */,
 				805A9C4F24256A77005E27EE /* SwiftUIAgora.xcdatamodeld in Sources */,
 				80294EB52426301700C94FC7 /* VotingAlgorithm.swift in Sources */,
+				80957F412435BFE0005770BC /* Constants.swift in Sources */,
 				8088E5D424143ED500CE92F1 /* SceneDelegate.swift in Sources */,
 				806B8E0A242960E1007CBD9D /* ConatactUs.swift in Sources */,
 				802AFFEE2423DE0000A46124 /* CreateElectionView.swift in Sources */,
