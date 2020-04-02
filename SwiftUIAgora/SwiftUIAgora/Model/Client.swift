@@ -18,6 +18,8 @@ class Client: NSObject {
         session = URLSession.shared
     }
     
+    // Make URL Request Using Alamofire
+    
     func makeRequest(_ url: String, _ httpMethod: HTTPMethod, _ headers: HTTPHeaders, parameters: [String: AnyObject], completion: @escaping (_ result: AnyObject?,_ statuscode: Int?,_ error: NSError?) -> Void) {
 
         func sendError(_ error: String) {
@@ -51,6 +53,8 @@ class Client: NSObject {
                 }
         }
     }
+    
+    // Get URL of the API
     
     func getApiUrl(_ apiUrl: String, _ method: String = "", _ param: String = "") -> String {
         return "\(apiUrl)\(method)\(param)"

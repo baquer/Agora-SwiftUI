@@ -32,6 +32,7 @@ class Constants {
     }
     struct APIURL {
         static let logInURL = "https://agora-rest-api.herokuapp.com/api/v1/auth/login"
+        static let aboutUsURL = "https://agora-frontend.herokuapp.com"
     }
     
     struct clientConstants  {
@@ -52,6 +53,7 @@ class Constants {
         static let profile = "Profile"
         static let passwordSettings = "Password Settings"
         static let yourDetails = "Your Details"
+        static let aboutUS = "About Us"
     }
     
     struct placeHolderText {
@@ -68,6 +70,11 @@ class Constants {
     struct buttonsLabels {
         static let updateProfile = "Update Profile"
         static let changePassword = "Change Password"
+        static let learnMore = "Learn More"
+    }
+
+    struct messages {
+        static let aboutUsMessage = "Agora vote is a voting platform where users can create elections and invite friends to cast their votes. It supports a wide range of voting algorithms some of which are Majority, Egalitarian, Australian STV just to name a few"
     }
     
 }

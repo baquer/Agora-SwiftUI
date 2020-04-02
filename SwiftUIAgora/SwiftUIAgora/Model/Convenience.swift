@@ -11,6 +11,9 @@ import Alamofire
 
 extension Client {
     
+    
+    // Log In function trigger using Alamofire
+    
     func loginUser(_ params: [String: AnyObject], _ completion: @escaping(_ success: Bool, _ results: [String: AnyObject]?, _ error: String) -> Void) {
 
         let url = Constants.APIURL.logInURL

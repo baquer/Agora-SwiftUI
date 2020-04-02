@@ -9,6 +9,9 @@
 import SwiftUI
 
 struct EditProfile: View {
+    
+    //Declare variables
+    
     @State var userName = ""
     @State var firstName = ""
     @State var lastName = ""
@@ -78,6 +81,7 @@ struct EditProfile_Previews: PreviewProvider {
         EditProfile()
     }
 }
+// Profile Image of a User
 
 struct userImage: View {
     var body: some View {
@@ -90,6 +94,7 @@ struct userImage: View {
             .padding(.bottom, 5)
     }
 }
+// Update Profile Button Contents
 
 struct updateProfileContent: View {
     var body: some View {
@@ -98,10 +103,11 @@ struct updateProfileContent: View {
             .foregroundColor(.white)
             .padding()
             .frame(width: 300, height: 50)
-            .background(Color(hex: 0xFFBE00))
+            .background(Color(hex: Constants.colorHexValue.yellow))
             .cornerRadius(15.0)
     }
 }
+// Update Password Button Contents
 
 struct updatePasswordContent: View {
     var body: some View {
@@ -110,7 +116,7 @@ struct updatePasswordContent: View {
             .foregroundColor(.white)
             .padding()
             .frame(width: 300, height: 50)
-            .background(Color(hex: 0xFFBE00))
+            .background(Color(hex: Constants.colorHexValue.yellow))
             .cornerRadius(15.0)
     }
 }

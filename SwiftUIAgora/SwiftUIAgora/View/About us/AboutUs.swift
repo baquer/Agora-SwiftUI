@@ -9,19 +9,19 @@
 import SwiftUI
 
 struct AboutUs: View {
-    let aboutUsURL = URL(string: "https://agora-frontend.herokuapp.com")
+    let aboutUsURL = URL(string: Constants.APIURL.aboutUsURL)
     var body: some View {
         ZStack {
             Color.black
                 .edgesIgnoringSafeArea(.all)
             VStack(spacing: 20) {
                 VStack(alignment: .center) {
-                    Text("About Us").font(.title).fontWeight(.bold).padding(30).colorInvert()
+                    Text(Constants.labels.aboutUS).font(.title).fontWeight(.bold).padding(30).colorInvert()
                     imageView()
                 }
                 Spacer()
                 VStack(alignment: .leading) {
-                    Text("Agora vote is a voting platform where users can create elections and invite friends to cast their votes. It supports a wide range of voting algorithms some of which are Majority, Egalitarian, Australian STV just to name a few").font(.callout).fontWeight(.bold).colorInvert()
+                    Text(Constants.messages.aboutUsMessage).font(.callout).fontWeight(.bold).colorInvert()
                     }
                 Spacer()
                 VStack {
@@ -43,14 +43,17 @@ struct AboutUs_Previews: PreviewProvider {
         AboutUs()
     }
 }
+
+// Learn More Button Content
+
 struct contactUsButtonContent: View {
     var body: some View {
-        return Text("Learn More")
+        return Text(Constants.buttonsLabels.learnMore)
             .font(.headline)
             .foregroundColor(.white)
             .padding()
             .frame(width: 300, height: 50)
-            .background(Color(hex: 0xFFBE00))
+            .background(Color(hex: Constants.colorHexValue.yellow))
             .cornerRadius(15.0)
     }
 }
