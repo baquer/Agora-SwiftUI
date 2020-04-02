@@ -9,20 +9,20 @@
 import SwiftUI
 
 struct ReportBug: View {
-    let reportBugURL = URL(string: "https://gitlab.com/aossie/agora-ios/issues")
+    let reportBugURL = URL(string: Constants.APIURL.reportBugURL)
     var body: some View {
         ZStack {
             Color.black
                 .edgesIgnoringSafeArea(.all)
             VStack(spacing: 20) {
                 VStack(alignment: .center) {
-                    Text("Report A Bug").font(.title).fontWeight(.bold).padding(30).colorInvert()
+                    Text(Constants.labels.reportBug).font(.title).fontWeight(.bold).padding(30).colorInvert()
                     bugImageView()
                 }
                 Spacer()
                 VStack(alignment: .center) {
 
-                    Text("Feel free to raise an issue so that our team can improve that as fast as possible").font(.callout).fontWeight(.bold).colorInvert()
+                    Text(Constants.messages.reportBugMessage).font(.callout).fontWeight(.bold).colorInvert()
                 }
                 Spacer()
                 VStack {
@@ -44,9 +44,12 @@ struct ReportBug_Previews: PreviewProvider {
         ReportBug()
     }
 }
+
+// Bug Image View
+
 struct bugImageView: View {
     var body: some View {
-        return Image("RBug")
+        return Image(Constants.imageName.RBug)
         .resizable()
         .aspectRatio(contentMode: .fill)
         .frame(width: 150, height: 150)
@@ -55,14 +58,16 @@ struct bugImageView: View {
     }
 }
 
+//Report Bug Button Content
+
 struct reportBugButtonContent: View {
     var body: some View {
-        return Text("Report Bug")
+        return Text(Constants.buttonsLabels.reportBug)
             .font(.headline)
             .foregroundColor(.white)
             .padding()
             .frame(width: 300, height: 50)
-            .background(Color(hex: 0x005229))
+            .background(Color(hex: Constants.colorHexValue.green))
             .cornerRadius(15.0)
     }
 }

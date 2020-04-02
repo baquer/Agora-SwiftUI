@@ -18,6 +18,7 @@ class Constants {
         static let bug = "Bug"
         static let aboutUs = "About"
         static let connectUs = "ConnectUs"
+        static let contactUs = "CntcUs"
         static let moreOp = "MV"
         static let elections = "Elections"
         static let viewImg1 = "Red0"
@@ -33,6 +34,9 @@ class Constants {
     struct APIURL {
         static let logInURL = "https://agora-rest-api.herokuapp.com/api/v1/auth/login"
         static let aboutUsURL = "https://agora-frontend.herokuapp.com"
+        static let gitterURL = "https://gitter.im/AOSSIE/Agora-iOS"
+        static let gitLabURL = "https://gitlab.com/aossie/agora-ios"
+        static let reportBugURL = "https://gitlab.com/aossie/agora-ios/issues"
     }
     
     struct clientConstants  {
@@ -54,6 +58,8 @@ class Constants {
         static let passwordSettings = "Password Settings"
         static let yourDetails = "Your Details"
         static let aboutUS = "About Us"
+        static let contactUs = "Conatct Us"
+        static let reportBug = "Report Abug"
     }
     
     struct placeHolderText {
@@ -71,10 +77,15 @@ class Constants {
         static let updateProfile = "Update Profile"
         static let changePassword = "Change Password"
         static let learnMore = "Learn More"
+        static let gitter = "GITTER"
+        static let gitLab = "GITLAB"
+        static let reportBug = "Report Bug"
     }
 
     struct messages {
         static let aboutUsMessage = "Agora vote is a voting platform where users can create elections and invite friends to cast their votes. It supports a wide range of voting algorithms some of which are Majority, Egalitarian, Australian STV just to name a few"
+        static let contactUsMessage = "Feel free to contact us on Gitter and work with us on GitLab"
+        static let reportBugMessage = "Feel free to raise an issue so that our team can improve that as fast as possible"
     }
     
 }
