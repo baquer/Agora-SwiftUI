@@ -93,6 +93,7 @@ class Constants {
         static let error = "error"
         static let agoraVote = "Agora Vote"
         static let connectWith = "Or Connect with"
+        static let status = "statusChange"
         
     }
     
@@ -127,6 +128,7 @@ class Constants {
         static let sendLink = "Reset Link"
         static let logIn = "Log In"
         static let facebook = "facebook"
+        static let forgotButton = "Forgot Password?"
     }
 
     struct messages {
@@ -144,10 +146,17 @@ class Constants {
         static let dashboard = "Dashboard"
         static let resetPassword = "Reset Password"
         static let home = "Home"
+        static let logIn = "Login"
     }
     
     struct  parameter {
         static let userName = "username"
+        static let identifier = "identifier"
+        static let password = "password"
+    }
+    
+    struct userDefaultKey {
+        static let token = "TOKEN"
     }
     
 }

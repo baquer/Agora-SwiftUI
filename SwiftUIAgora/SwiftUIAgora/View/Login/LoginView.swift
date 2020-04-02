@@ -12,7 +12,7 @@ import Alamofire
 let lightGreyColor = Color(red: 239.0/255.0, green: 243.0/255.0, blue: 244.0/255.0, opacity: 1.0)
 
 struct LoginView: View {
-    @State var status = UserDefaults.standard.value(forKey: "TOKEN") as? Bool ?? false
+    @State var status = UserDefaults.standard.value(forKey: Constants.userDefaultKey.token) as? Bool ?? false
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     var body: some View {
         ZStack {
@@ -34,24 +34,27 @@ struct LoginView: View {
             }.animation(.spring())
             .onAppear {
 
-                NotificationCenter.default.addObserver(forName: NSNotification.Name("statusChange"), object: nil, queue: .main) { (_) in
+                NotificationCenter.default.addObserver(forName: NSNotification.Name(Constants.labels.status), object: nil, queue: .main) { (_) in
 
-                    let status = UserDefaults.standard.value(forKey: "TOKEN") as? Bool ?? false
+                    let status = UserDefaults.standard.value(forKey: Constants.userDefaultKey.token) as? Bool ?? false
                     self.status = status
                 }
             }
     }
     }
 }
+
 struct CircleImage_Previews: PreviewProvider {
     static var previews: some View {
         LoginView()
     }
 }
 
+// Log In Label
+
 struct WelcomeText: View {
     var body: some View {
-        return Text("Log In")
+        return Text(Constants.buttonsLabels.logIn)
             .font(.largeTitle)
             .fontWeight(.semibold)
             .padding(.bottom, 75)
@@ -59,9 +62,11 @@ struct WelcomeText: View {
     }
 }
 
+// Logo Image View
+
 struct UserImage: View {
     var body: some View {
-        return Image("iTunesArtwork-1")
+        return Image(Constants.imageName.logo)
             .resizable()
             .aspectRatio(contentMode: .fill)
             .frame(width: 150, height: 150)
@@ -71,21 +76,23 @@ struct UserImage: View {
     }
 }
 
+//Log In button content
+
 struct LoginButtonContent: View {
     var body: some View {
-        return Text("Log In")
+        return Text(Constants.buttonsLabels.logIn)
             .font(.headline)
             .foregroundColor(.white)
             .padding()
             .frame(width: 300, height: 50)
-            .background(Color(hex: 0xFFBE00))
+            .background(Color(hex: Constants.colorHexValue.yellow))
             .cornerRadius(15.0)
     }
 }
 
 struct ForgotButtonContent: View {
     var body: some View {
-        return Text("Forgot Password?")
+        return Text(Constants.buttonsLabels.forgotButton)
             .font(.headline)
             .foregroundColor(.white)
             .padding()
@@ -105,10 +112,10 @@ struct Login: View {
                     UserImage()
                     WelcomeText()
                     Spacer()
-                    customTextField(placeHolder: "Username", value: $userName, lineColor: .black, width: 1)
+            customTextField(placeHolder: Constants.placeHolderText.userName, value: $userName, lineColor: .black, width: 1)
                         .frame(width:380)
                         .colorInvert()
-                    customPasswordTextField(placeHolder: "Password", value: $passWord, lineColor: .black, width: 1).colorInvert()
+            customPasswordTextField(placeHolder: Constants.placeHolderText.password, value: $passWord, lineColor: .black, width: 1).colorInvert()
                         .frame(width: 380)
                         .padding(30)
                     NavigationLink(destination: TabBarSwiftUIView(), tag: 1, selection: $selection) {
@@ -132,12 +139,12 @@ struct Login: View {
                     }
                     NavigationLink(destination: ForgotPassword(), tag: 2, selection: $selection) {
                     Button(action: {
-                        print(UserDefaults.standard.value(forKey: "TOKEN")!)
+                        print(UserDefaults.standard.value(forKey: Constants.userDefaultKey.token)!)
                         self.selection = 2
                     }) {
                         ForgotButtonContent()
                     }
-                    } .navigationBarTitle("Log In", displayMode: .large)
+                    } .navigationBarTitle(Constants.navigationTitle.logIn)
                     Spacer()
                     Spacer()
                 }
@@ -145,12 +152,15 @@ struct Login: View {
     }
 }
 
+
+// Log In Authnetication using alamofire and API.
+
 func loginAuthentication(username: String,password : String,completion: @escaping (Bool,String)->Void) {
        let userName = username
        let passWord = password
        let params: [String: AnyObject] = [
-           "identifier": userName as AnyObject,
-           "password": passWord as AnyObject
+        Constants.parameter.identifier: userName as AnyObject,
+        Constants.parameter.password: passWord as AnyObject
            ]
        Client.sharedInstance.loginUser(params as [String: AnyObject]) { (success, result, message) in
            DispatchQueue.main.async {
@@ -180,12 +190,12 @@ func loginAuthentication(username: String,password : String,completion: @escapin
                            guard let token = innerResult.value["token"] as? String else {
                                fatalError("Unable to find access token")
                            }
-                           UserDefaults.standard.set(token, forKey: "TOKEN")
+                        UserDefaults.standard.set(token, forKey: Constants.userDefaultKey.token)
                        }
                    }
                }
                else {
-                   print("error hai ye")
+                print(Constants.labels.error)
                }
            }
        }
