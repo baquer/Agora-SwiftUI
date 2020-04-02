@@ -22,7 +22,7 @@ struct VotingAlgorithm: View {
             Color.black
                 .edgesIgnoringSafeArea(.all)
             VStack {
-                Text("Voting Algorithm").fontWeight(.heavy).font(.largeTitle).padding([.top,.bottom], 20).foregroundColor(.white)
+                Text(Constants.labels.votingAlgorithm).fontWeight(.heavy).font(.largeTitle).padding([.top,.bottom], 20).foregroundColor(.white)
                 List(0..<algoArray.count) { i in
                    VStack {
                     Button(action: {
@@ -33,11 +33,11 @@ struct VotingAlgorithm: View {
                         Text(self.algoArray[i])
                         Spacer()
                         ZStack{
-                            Circle().fill(self.selected == self.algoArray[i] ? Color(hex: 0x005229) : Color.black.opacity(0.2)).frame(width: 18, height: 18)
+                            Circle().fill(self.selected == self.algoArray[i] ? Color(hex: Constants.colorHexValue.green) : Color.black.opacity(0.2)).frame(width: 18, height: 18)
                             
                             if self.selected == self.algoArray[i] {
                                 
-                                Circle().stroke(Color(hex: 0x005229), lineWidth: 4).frame(width: 25, height: 25)
+                                Circle().stroke(Color(hex: Constants.colorHexValue.green), lineWidth: 4).frame(width: 25, height: 25)
                             }
                         }
                     }.padding(.horizontal, 20)
@@ -65,14 +65,14 @@ struct VotingAlgorithm: View {
                         self.selection = 1
                      }) {
                          
-                         Text("Continue").padding(.vertical).padding(.horizontal,20).foregroundColor(.white)
+                        Text(Constants.labels.continueText).padding(.vertical).padding(.horizontal,20).foregroundColor(.white)
                          
                      }
                      .background(
                         
                         self.selected != "" ?
                         
-                            LinearGradient(gradient: .init(colors: [Color(hex: 0x005229),Color(hex: 0xFFBE00)]), startPoint: .leading, endPoint: .trailing) :
+                            LinearGradient(gradient: .init(colors: [Color(hex: Constants.colorHexValue.green),Color(hex: Constants.colorHexValue.yellow)]), startPoint: .leading, endPoint: .trailing) :
                         
                             LinearGradient(gradient: .init(colors: [Color.black.opacity(0.2),Color.black.opacity(0.2)]), startPoint: .leading, endPoint: .trailing)
                      
@@ -83,7 +83,7 @@ struct VotingAlgorithm: View {
                     
                     
                 }.padding(.top)
-            }.navigationBarTitle("Voting Algorithm")
+            }.navigationBarTitle(Constants.navigationTitle.votingAlgo)
         }
     }
 }

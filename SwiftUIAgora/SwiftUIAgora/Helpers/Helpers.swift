@@ -20,6 +20,8 @@ struct Helpers_Previews: PreviewProvider {
     }
 }
 
+// Color extension using hex values
+
 extension Color {
     init(hex: Int, alpha: Double = 1) {
         let components = (
@@ -36,6 +38,8 @@ extension Color {
         )
     }
 }
+
+// Custom text field
 
 struct customTextField: View {
     var placeHolder: String
@@ -54,6 +58,8 @@ struct customTextField: View {
         }
     }
 }
+
+// Custom password text field
 
 struct customPasswordTextField: View {
     var placeHolder: String
@@ -74,5 +80,47 @@ struct customPasswordTextField: View {
         }
     }
 }
+
+// Multiline Text Fields Custom function.
+
+struct multiline : UIViewRepresentable {
+    
+    
+    @Binding var txt : String
+    
+    func makeCoordinator() -> multiline.Coordinator {
+        
+        return multiline.Coordinator(parent1: self)
+        
+    }
+    func makeUIView(context: UIViewRepresentableContext<multiline>) -> UITextView{
+        
+        let textview = UITextView()
+        textview.font = .systemFont(ofSize: 18)
+        textview.delegate = context.coordinator
+        return textview
+    }
+    
+    func updateUIView(_ uiView: UITextView, context: UIViewRepresentableContext<multiline>) {
+        
+        uiView.text = txt
+    }
+    
+    class Coordinator : NSObject,UITextViewDelegate{
+        
+        var parent : multiline
+        
+        init(parent1 : multiline) {
+            
+            parent = parent1
+        }
+        
+        func textViewDidChange(_ textView: UITextView) {
+            
+            self.parent.txt = textView.text
+        }
+    }
+}
+
 
 

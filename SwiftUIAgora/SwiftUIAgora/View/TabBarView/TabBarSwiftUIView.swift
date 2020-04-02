@@ -25,36 +25,36 @@ struct TabBarSwiftUIView: View {
                 ElectionView()
                     .tabItem {
                         VStack {
-                            Image("Election")
-                            Text("Elections")
+                            Image(Constants.imageName.elections)
+                            Text(Constants.labels.elections)
                         }
                 }.tag(1)
                 EditProfile()
                     .tabItem {
                         VStack {
-                            Image("EditProfile")
-                            Text("Edit Profile")
+                            Image(Constants.imageName.editProfile)
+                            Text(Constants.labels.editProfile)
                         }
                 }.tag(2)
                 ConatactUs()
                     .tabItem {
                         VStack {
-                            Image("ConnectUs")
-                            Text("Contact Us")
+                            Image(Constants.imageName.connectUs)
+                            Text(Constants.labels.contactUs)
                         }
                 }.tag(3)
                 AboutUs()
                     .tabItem {
                         VStack {
-                            Image("About")
-                            Text("About Us")
+                            Image(Constants.imageName.aboutUs)
+                            Text(Constants.labels.aboutUS)
                         }
                 }.tag(4)
                 ReportBug()
                     .tabItem {
                         VStack {
-                            Image("Bug")
-                            Text("Report Bug")
+                            Image(Constants.imageName.bug)
+                            Text(Constants.labels.reportBug)
                         }
                 }.tag(5)
             }.accentColor(Color.white)
@@ -73,24 +73,26 @@ struct TabBarSwiftUIView_Previews: PreviewProvider {
     }
 }
 
+// More Button Content
+
 struct moreButtonContent: View {
     var body: some View {
-        return Image("MV")
+        return Image(Constants.imageName.moreOp)
             .resizable()
             .frame(width: 40, height: 35)
             .foregroundColor(.white)
             .contextMenu {
                 Button(action: {
                 }) {
-                    Text("Invite Friends")
-                    Image(systemName: "checkmark.circle.fill")
+                    Text(Constants.labels.inviteFriends)
+                    Image(systemName: Constants.imageName.inviteFriends)
                     .foregroundColor(.red)
                 }
 
                 Button(action: {
                 }) {
-                    Text("Logout")
-                    Image("logout")
+                    Text(Constants.labels.logout)
+                    Image(Constants.imageName.logout)
                 }
             }
     }

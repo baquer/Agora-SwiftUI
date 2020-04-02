@@ -23,15 +23,15 @@ struct ForgotPassword: View {
                     messageText()
                     bodyText()
                     Spacer()
-                    customTextField(placeHolder: "User Name", value: $username, lineColor: .black, width: 1)
+                    customTextField(placeHolder: Constants.placeHolderText.userName, value: $username, lineColor: .black, width: 1)
                         .colorInvert()
                         .frame(width: 380)
                     Button(action: {
                         self.resetPasswordPerformed(username: self.username) { (verified, status) in
                             if verified {
-                                print("error")
+                                print(Constants.labels.error)
                             } else {
-                                print("Success")
+                                print(Constants.labels.success)
                             }
                         }
                     }) {
@@ -39,35 +39,40 @@ struct ForgotPassword: View {
                     }.padding()
                     Spacer()
                     Spacer()
-                        .navigationBarTitle("Reset Password", displayMode: .large)
+                        .navigationBarTitle(Constants.navigationTitle.resetPassword)
                 }
             }
     }
+    
+    // Reset Function Called using HTTP Method Request
+    
     func resetPassword(_ params: [String: AnyObject], _ completion: @escaping(_ success: Bool, _ results: [String: AnyObject]?, _ error: String) -> Void) {
         
         let url = "https://agora-rest-api.herokuapp.com/api/v1/auth/forgotPassword/send/\(username)"
         _ = Client.sharedInstance.makeRequest(url, .post, [:], parameters: params, completion: { (results, status, message) in
 
                if results != nil && status == 200 {
-                completion(true, results as? [String: AnyObject], "success")
+                completion(true, results as? [String: AnyObject], Constants.labels.success)
                } else {
-                completion(false, nil, "fail")
+                completion(false, nil, Constants.labels.failure)
                }
                return
            })
     }
+    
+    // Allow Parameters
 
     func resetPasswordPerformed(username: String,completion: @escaping (Bool,String)->Void) {
         let userName = username
     let params: [String: AnyObject] = [
-        "username": userName as AnyObject
+        Constants.parameter.userName: userName as AnyObject
         ]
     resetPassword(params as [String: AnyObject]) { (success, result, message) in
         DispatchQueue.main.async {
             if success {
-                print("Success!")
+                print(Constants.labels.success)
             } else {
-                print("Failure!")
+                print(Constants.labels.failure)
             }
         }
     }
@@ -81,9 +86,11 @@ struct ForgotPassword_Previews: PreviewProvider {
     }
 }
 
+// Image View
+
 struct forgotImageView: View {
     var body: some View {
-        return Image("ForgotP")
+        return Image(Constants.imageName.resetPass)
         .resizable()
         .aspectRatio(contentMode: .fill)
         .frame(width: 150, height: 150)
@@ -93,9 +100,11 @@ struct forgotImageView: View {
     }
 }
 
+// Message Text
+
 struct messageText: View {
     var body: some View {
-        return Text("Please enter your user name")
+        return Text(Constants.messages.resetPassText2)
             .font(.title)
             .fontWeight(.semibold)
             .padding(.bottom, 40)
@@ -106,7 +115,7 @@ struct messageText: View {
 
 struct bodyText: View {
     var body: some View {
-        return Text("We will send a verification link to your registered email address")
+        return Text(Constants.messages.resetPassText)
             .font(.subheadline)
             .fontWeight(.semibold)
             .padding(.bottom, 40)
@@ -115,14 +124,16 @@ struct bodyText: View {
     }
 }
 
+// Send Link Button Content
+
 struct sendLinkButtonContent: View {
     var body: some View {
-        return Text("Reset Link")
+        return Text(Constants.buttonsLabels.sendLink)
             .font(.headline)
             .foregroundColor(.white)
             .padding()
             .frame(width: 300, height: 50)
-            .background(Color(hex: 0xFFBE00))
+            .background(Color(hex: Constants.colorHexValue.yellow))
             .cornerRadius(15.0)
     }
 }

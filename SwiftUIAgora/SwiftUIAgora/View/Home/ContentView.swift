@@ -34,14 +34,16 @@ struct ContentView: View {
             .padding(10)
             connectText()
                 .padding(10)
-                Button(action: {print("Button tapped")}) {
+                Button(action: {
+                    
+                }) {
                     facebookButtonContent()
                 }
                 Spacer()
             }
         .padding()
         }
-        .navigationBarTitle("Home", displayMode: NavigationBarItem.TitleDisplayMode.large)
+        .navigationBarTitle(Constants.navigationTitle.home)
     }
     }
 }
@@ -52,9 +54,11 @@ struct ContentView_Previews: PreviewProvider {
     }
 }
 
+// Welcome text view
+
 struct welcomeView: View {
     var body: some View {
-        return Text("Agora Vote")
+        return Text(Constants.labels.agoraVote)
         .font(.largeTitle)
         .fontWeight(.semibold)
         .foregroundColor(.white)
@@ -62,9 +66,11 @@ struct welcomeView: View {
     }
 }
 
+// Logo Image View
+
 struct imageView: View {
     var body: some View {
-        return Image("iTunesArtwork-1")
+        return Image(Constants.imageName.logo)
         .resizable()
         .aspectRatio(contentMode: .fill)
         .frame(width: 150, height: 150)
@@ -74,40 +80,50 @@ struct imageView: View {
     }
 }
 
+// Sign Up Button Content
+
 struct signUpButtonContent: View {
     var body: some View {
-        return Text("Sign Up")
+        return Text(Constants.buttonsLabels.signUp)
         .font(.headline)
         .foregroundColor(.white)
         .padding()
         .frame(width: 350, height: 50)
-            .background(Color(hex: 0x005229))
+            .background(Color(hex: Constants.colorHexValue.green))
         .cornerRadius(15.0)
     }
 }
 
+//LogIn Button Content
+
 struct logInButtonContent: View {
     var body: some View {
-        return Text("Log In")
+        return Text(Constants.buttonsLabels.logIn)
         .font(.headline)
         .foregroundColor(.white)
         .padding()
         .frame(width: 350, height: 50)
-            .background(Color(hex: 0xFFBE00))
+            .background(Color(hex: Constants.colorHexValue.yellow))
         .cornerRadius(15.0)
     }
 }
+
+// Connect with lebel
+
 struct connectText: View {
     var body: some View {
-        return Text("Or Connect With")
+        return Text(Constants.labels.connectWith)
             .font(.subheadline)
             .fontWeight(.semibold)
             .foregroundColor(Color.white)
     }
 }
+
+// Facebook button content
+
 struct facebookButtonContent: View {
     var body: some View {
-        return Text("facebook")
+        return Text(Constants.buttonsLabels.facebook)
         .font(.headline)
         .foregroundColor(.white)
         .padding()

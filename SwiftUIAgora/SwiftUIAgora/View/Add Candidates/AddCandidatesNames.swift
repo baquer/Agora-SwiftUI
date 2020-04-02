@@ -22,9 +22,9 @@ struct AddCandidatesNames: View {
             Color.black
                 .edgesIgnoringSafeArea(.all)
             VStack(spacing: 30) {
-                Text("Add Candidates").fontWeight(.heavy).font(.largeTitle).padding([.top,.bottom], 20).colorInvert().frame(alignment: .center)
+                Text(Constants.labels.addCandidates).fontWeight(.heavy).font(.largeTitle).padding([.top,.bottom], 20).colorInvert().frame(alignment: .center)
 
-                customTextField(placeHolder: "Enter Candidates Name", value: $candidateName, lineColor: .black, width: 1).colorInvert()
+                customTextField(placeHolder: Constants.placeHolderText.enterCandidates, value: $candidateName, lineColor: .black, width: 1).colorInvert()
                 
                 Button(action: {
                     
@@ -36,7 +36,7 @@ struct AddCandidatesNames: View {
                 List {
                     ForEach(addCan, id: \.self) { addCand in
                         VStack {
-                            Text("\(addCand.candidateName ?? "Unknown")").font(.title)
+                            Text("\(addCand.candidateName ?? Constants.labels.unknowns)").font(.title)
                         }.frame(width: 350, height: 50)
                          .background(Color.white)
                          .cornerRadius(30)
@@ -50,7 +50,7 @@ struct AddCandidatesNames: View {
                 }) {
                    createNextButtonContent()
                 }
-                    }.navigationBarTitle("Enter Candidates")
+                }.navigationBarTitle(Constants.navigationTitle.enterCandidates)
                 Spacer()
                 Spacer()
             }.padding(20)
@@ -67,14 +67,16 @@ struct AddCandidatesNames_Previews: PreviewProvider {
     }
 }
 
+// Add Candidates Button Content
+
 struct createAddCandidatesButtonContent: View {
     var body: some View {
-        return Text("Add Candidates")
+        return Text(Constants.buttonsLabels.addcandidates)
             .font(.headline)
             .foregroundColor(.white)
             .padding()
             .frame(width: 300, height: 50)
-            .background(Color(hex: 0x005229))
+            .background(Color(hex: Constants.colorHexValue.green))
             .cornerRadius(15.0)
     }
 }

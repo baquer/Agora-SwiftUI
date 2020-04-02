@@ -29,29 +29,29 @@ struct SignUpView: View {
                 VStack {
                     Spacer()
                     UserImage()
-                    SignUpText()
+                    signUpText()
                     Spacer()
                     ScrollView() {
                       VStack {
-                        customTextField(placeHolder: "First Name", value: $firstName, lineColor: .black, width: 1)
+                        customTextField(placeHolder: Constants.placeHolderText.firstName, value: $firstName, lineColor: .black, width: 1)
                                         .frame(width:380)
                                         .colorInvert()
-                        customTextField(placeHolder: "Last Name", value: $lastName, lineColor: .black, width: 1)
+                        customTextField(placeHolder: Constants.placeHolderText.lastName, value: $lastName, lineColor: .black, width: 1)
                                         .frame(width:380)
                                         .colorInvert()
-                        customTextField(placeHolder: "User Name", value: $userName, lineColor: .black, width: 1)
+                        customTextField(placeHolder: Constants.placeHolderText.userName, value: $userName, lineColor: .black, width: 1)
                                         .frame(width:380)
                                         .colorInvert()
-                        customTextField(placeHolder: "Email", value: $email, lineColor: .black, width: 1)
+                        customTextField(placeHolder: Constants.placeHolderText.email, value: $email, lineColor: .black, width: 1)
                                         .frame(width:380)
                                         .colorInvert()
-                        customPasswordTextField(placeHolder: "Password", value: $password, lineColor: .black, width: 1)
+                        customPasswordTextField(placeHolder: Constants.placeHolderText.password, value: $password, lineColor: .black, width: 1)
                                         .frame(width: 380)
                                         .colorInvert()
-                        customTextField(placeHolder: "Write Your Question Here", value: $securityQuestions, lineColor: .black, width: 1)
+                        customTextField(placeHolder: Constants.placeHolderText.securityQuestion, value: $securityQuestions, lineColor: .black, width: 1)
                                         .frame(width:380)
                                         .colorInvert()
-                        customTextField(placeHolder: "Write Your Answer Here", value: $securityQuestions, lineColor: .black, width: 1)
+                        customTextField(placeHolder: Constants.placeHolderText.securityAnswer, value: $securityQuestions, lineColor: .black, width: 1)
                         .frame(width:380)
                         .colorInvert()
                     }
@@ -75,10 +75,11 @@ struct SignUpView_Previews: PreviewProvider {
     }
 }
 
+// Sign Up label
 
-struct SignUpText: View {
+struct signUpText: View {
     var body: some View {
-        return Text("Sign Up")
+        return Text(Constants.labels.signUp)
             .font(.largeTitle)
             .fontWeight(.semibold)
             .padding(.bottom, 75)
@@ -86,14 +87,16 @@ struct SignUpText: View {
     }
 }
 
+// Sign Up button content
+
 struct SignUpButtonContent: View {
     var body: some View {
-        return Text("Sign Up")
+        return Text(Constants.buttonsLabels.signUp)
             .font(.headline)
             .foregroundColor(.white)
             .padding()
             .frame(width: 300, height: 50)
-            .background(Color(hex: 0xFFBE00))
+            .background(Color(hex: Constants.colorHexValue.yellow))
             .cornerRadius(15.0)
     }
 }

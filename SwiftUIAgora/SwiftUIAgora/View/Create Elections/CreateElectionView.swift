@@ -27,15 +27,15 @@ struct CreateElectionView: View {
             Color.black
             .edgesIgnoringSafeArea(.all)
             VStack {
-                Text("Create Elections").fontWeight(.heavy).font(.largeTitle).padding([.top,.bottom], 20).foregroundColor(.white)
+                Text(Constants.labels.createElections).fontWeight(.heavy).font(.largeTitle).padding([.top,.bottom], 20).foregroundColor(.white)
                 Form {
-                    TextField("Enter Election Name", text: $name)
-                    TextField("Enter Election Description", text: $description).frame(width: 350, height: 200).multilineTextAlignment(.leading)
+                    TextField(Constants.placeHolderText.electionName, text: $name)
+                    TextField(Constants.placeHolderText.electionDescription, text: $description).frame(width: 350, height: 200).multilineTextAlignment(.leading)
                     DatePicker(selection: $startDate) {
-                        Text("Start Date")
+                        Text(Constants.labels.startDate)
                     }
                     DatePicker(selection: $endDate) {
-                        Text("End Date")
+                        Text(Constants.labels.endDate)
                     }
                     // Checking that if data is stored or not
                     
@@ -48,12 +48,6 @@ struct CreateElectionView: View {
                  .padding(2)
                 NavigationLink(destination: AddCandidatesNames(), tag: 1, selection: $selection) {
                 Button(action: {
-                   // Storing user data in User Default
-//                    UserDefaults.standard.set(self.name, forKey: "electionName")
-//                    UserDefaults.standard.set(self.description, forKey: "electionDescription")
-//                    UserDefaults.standard.set(self.startDate, forKey: "startDate")
-//                    UserDefaults.standard.set(self.endDate, forKey: "endDate")
-//                    print(UserDefaults.standard.value(forKey: "electionName")!)
                     
                     // Core Data Model
                     
@@ -71,7 +65,7 @@ struct CreateElectionView: View {
                 }) {
                    createNextButtonContent()
                 }
-                } .navigationBarTitle("Create Elections")
+                } .navigationBarTitle(Constants.navigationTitle.createElections)
                 Spacer()
                 Spacer()
                 Spacer()
@@ -87,6 +81,8 @@ struct CreateElectionView_Previews: PreviewProvider {
     }
 }
 
+// Next Button Content
+
 struct createNextButtonContent: View {
     var body: some View {
         return Text("Next")
@@ -94,48 +90,8 @@ struct createNextButtonContent: View {
             .foregroundColor(.white)
             .padding()
             .frame(width: 300, height: 50)
-            .background(Color(hex: 0xFFBE00))
+            .background(Color(hex: Constants.colorHexValue.yellow))
             .cornerRadius(15.0)
     }
 }
-
-struct multiline : UIViewRepresentable {
-    
-    
-    @Binding var txt : String
-    
-    func makeCoordinator() -> multiline.Coordinator {
-        
-        return multiline.Coordinator(parent1: self)
-        
-    }
-    func makeUIView(context: UIViewRepresentableContext<multiline>) -> UITextView{
-        
-        let textview = UITextView()
-        textview.font = .systemFont(ofSize: 18)
-        textview.delegate = context.coordinator
-        return textview
-    }
-    
-    func updateUIView(_ uiView: UITextView, context: UIViewRepresentableContext<multiline>) {
-        
-        uiView.text = txt
-    }
-    
-    class Coordinator : NSObject,UITextViewDelegate{
-        
-        var parent : multiline
-        
-        init(parent1 : multiline) {
-            
-            parent = parent1
-        }
-        
-        func textViewDidChange(_ textView: UITextView) {
-            
-            self.parent.txt = textView.text
-        }
-    }
-}
-
 

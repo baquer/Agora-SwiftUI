@@ -22,7 +22,7 @@ struct Options: View {
                 .edgesIgnoringSafeArea(.all)
             VStack(spacing: 5) {
                 VStack(alignment: .center) {
-                    Text("Some More Options").font(.title).fontWeight(.bold).colorInvert()
+                    Text(Constants.labels.moreOptions).font(.title).fontWeight(.bold).colorInvert()
                     .padding(10)
                     Form {
                         Toggle(isOn: $inviteVoters) {
@@ -34,7 +34,7 @@ struct Options: View {
                     }.colorInvert()
                 }.padding(10)
                 VStack(alignment: .center) {
-                    Text("How Secret are ballots?").font(.title).fontWeight(.bold).colorInvert()
+                    Text(Constants.labels.ballotSecrecy).font(.title).fontWeight(.bold).colorInvert()
                     List(0..<ballotArray.count) { i in
                         VStack {
                          Button(action: {
@@ -45,11 +45,11 @@ struct Options: View {
                              Text(self.ballotArray[i])
                              Spacer()
                              ZStack{
-                                 Circle().fill(self.selected == self.ballotArray[i] ? Color(hex: 0x005229) : Color.black.opacity(0.2)).frame(width: 18, height: 18)
+                                Circle().fill(self.selected == self.ballotArray[i] ? Color(hex: Constants.colorHexValue.green) : Color.black.opacity(0.2)).frame(width: 18, height: 18)
                                  
                                  if self.selected == self.ballotArray[i] {
                                      
-                                     Circle().stroke(Color(hex: 0x005229), lineWidth: 4).frame(width: 25, height: 25)
+                                    Circle().stroke(Color(hex: Constants.colorHexValue.green), lineWidth: 4).frame(width: 25, height: 25)
                                  }
                              }
                          }.padding(.horizontal, 20)
@@ -62,7 +62,7 @@ struct Options: View {
                     }.colorInvert()
                 }
                 VStack(alignment: .center) {
-                    Text("Who can see the list of Voters?").font(.title).fontWeight(.bold).colorInvert()
+                    Text(Constants.labels.listVoters).font(.title).fontWeight(.bold).colorInvert()
                     List(0..<listArray.count) { i in
                         VStack {
                          Button(action: {
@@ -73,11 +73,11 @@ struct Options: View {
                              Text(self.listArray[i])
                              Spacer()
                              ZStack{
-                                 Circle().fill(self.select == self.listArray[i] ? Color(hex: 0x005229) : Color.black.opacity(0.2)).frame(width: 18, height: 18)
+                                Circle().fill(self.select == self.listArray[i] ? Color(hex: Constants.colorHexValue.green) : Color.black.opacity(0.2)).frame(width: 18, height: 18)
                                  
                                  if self.select == self.listArray[i] {
                                      
-                                     Circle().stroke(Color(hex: 0x005229), lineWidth: 4).frame(width: 25, height: 25)
+                                    Circle().stroke(Color(hex: Constants.colorHexValue.green), lineWidth: 4).frame(width: 25, height: 25)
                                  }
                              }
                          }.padding(.horizontal, 20)
@@ -106,14 +106,16 @@ struct Options_Previews: PreviewProvider {
     }
 }
 
+// Election Button Content
+
 struct createElectButtonContent: View {
     var body: some View {
-        return Text("Create Elections")
+        return Text(Constants.buttonsLabels.createEletion)
             .font(.headline)
             .foregroundColor(.white)
             .padding()
             .frame(width: 300, height: 50)
-            .background(Color(hex: 0xFFBE00))
+            .background(Color(hex: Constants.colorHexValue.yellow))
             .cornerRadius(15.0)
     }
 }
