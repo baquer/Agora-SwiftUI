@@ -48,4 +48,26 @@ class Constants {
         static let contentValue = "application/json"
     }
     
+    struct  labels {
+        static let profile = "Profile"
+        static let passwordSettings = "Password Settings"
+        static let yourDetails = "Your Details"
+    }
+    
+    struct placeHolderText {
+        static let userName = "Username"
+        static let firstName = "First Name"
+        static let lastName = "Last Name"
+        static let email = "Email Id"
+        static let password = "Password"
+        static let oldPassword = "Old Password"
+        static let newPassword = "New Password"
+        static let confirmNewPasword = "Confirm New Password"
+    }
+    
+    struct buttonsLabels {
+        static let updateProfile = "Update Profile"
+        static let changePassword = "Change Password"
+    }
+    
 }

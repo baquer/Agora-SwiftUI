@@ -105,10 +105,10 @@ struct Login: View {
                     UserImage()
                     WelcomeText()
                     Spacer()
-                    CustomTextField(placeHolder: "Username", value: $userName, lineColor: .black, width: 1)
+                    customTextField(placeHolder: "Username", value: $userName, lineColor: .black, width: 1)
                         .frame(width:380)
                         .colorInvert()
-                    CustomPasswordTextField(placeHolder: "Password", value: $passWord, lineColor: .black, width: 1).colorInvert()
+                    customPasswordTextField(placeHolder: "Password", value: $passWord, lineColor: .black, width: 1).colorInvert()
                         .frame(width: 380)
                         .padding(30)
                     NavigationLink(destination: TabBarSwiftUIView(), tag: 1, selection: $selection) {

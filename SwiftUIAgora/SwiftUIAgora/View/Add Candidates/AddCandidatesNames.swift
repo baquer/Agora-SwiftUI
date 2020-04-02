@@ -24,7 +24,7 @@ struct AddCandidatesNames: View {
             VStack(spacing: 30) {
                 Text("Add Candidates").fontWeight(.heavy).font(.largeTitle).padding([.top,.bottom], 20).colorInvert().frame(alignment: .center)
 
-                CustomTextField(placeHolder: "Enter Candidates Name", value: $candidateName, lineColor: .black, width: 1).colorInvert()
+                customTextField(placeHolder: "Enter Candidates Name", value: $candidateName, lineColor: .black, width: 1).colorInvert()
                 
                 Button(action: {
                     

@@ -23,7 +23,7 @@ struct ForgotPassword: View {
                     messageText()
                     bodyText()
                     Spacer()
-                    CustomTextField(placeHolder: "User Name", value: $username, lineColor: .black, width: 1)
+                    customTextField(placeHolder: "User Name", value: $username, lineColor: .black, width: 1)
                         .colorInvert()
                         .frame(width: 380)
                     Button(action: {

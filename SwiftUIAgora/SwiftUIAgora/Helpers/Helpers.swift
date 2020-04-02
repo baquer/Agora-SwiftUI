@@ -37,7 +37,7 @@ extension Color {
     }
 }
 
-struct CustomTextField: View {
+struct customTextField: View {
     var placeHolder: String
     @Binding var value: String
     var lineColor: Color
@@ -55,7 +55,7 @@ struct CustomTextField: View {
     }
 }
 
-struct CustomPasswordTextField: View {
+struct customPasswordTextField: View {
     var placeHolder: String
     @Binding var value: String
 
